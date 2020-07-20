@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/config.h.in
+END
+sndfile-generate-chirp.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/sndfile-generate-chirp.c
+END
+sndfile-jackplay.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/sndfile-jackplay.c
+END
+kaiser_window_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/kaiser_window_test.c
+END
+sndfile-mix-to-mono.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/sndfile-mix-to-mono.c
+END
+window.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/window.c
+END
+common.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/common.c
+END
+sndfile-spectrogram.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/sndfile-spectrogram.c
+END
+window.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/window.h
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/sndfile-tools-1.03/src/common.h
+END

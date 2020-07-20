@@ -1,0 +1,1 @@
+g++ -o eventSound.cgi sound.cc -I /sw/include /sw/lib/libsndfile.dylib -arch i386

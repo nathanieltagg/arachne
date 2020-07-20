@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs
+END
+sndfile-cmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-cmp.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/Makefile.in
+END
+sndfile-convert.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-convert.c
+END
+sndfile-play-beos.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-play-beos.cpp
+END
+sndfile-info.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-info.c
+END
+test-sndfile-metadata-set.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/test-sndfile-metadata-set.py
+END
+sndfile-metadata-get.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-metadata-get.c
+END
+sndfile-interleave.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-interleave.c
+END
+sndfile-play.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-play.c
+END
+common.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/common.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/Makefile.am
+END
+sndfile-deinterleave.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-deinterleave.c
+END
+sndfile-concat.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-concat.c
+END
+sndfile-metadata-set.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/sndfile-metadata-set.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/Makefile
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/programs/common.h
+END

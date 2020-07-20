@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xml:lang="en">
+<head> 
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+
+
+<title>Arachne Launch Page</title>
+<link rel="icon"  type="image/png" href="front_page/a" />  
+
+<link rel="stylesheet" type="text/css" href="launch.css" />
+<link rel="stylesheet" type="text/css" href="front_page/menu.css" />
+
+<!-- Activate some overrides to basic configuration. -->
+
+
+<script type="text/javascript" charset="utf-8">
+gPageName='aboutarachne';
+</script>
+
+<!-- Javascript libraries and code. -->
+<!--#include virtual="html/libraries.inc"-->
+<script type="text/javascript">gBlockWhenQuerying=false;</script>
+
+<!-- Main CSS sheet for basic layout, custom mods. -->
+<link rel="stylesheet" href="arachne.css" type="text/css" />
+
+
+
+</head>
+
+
+<body>
+	
+	<!--#include virtual="front_page/menu.inc" -->
+  
+
+   <!--#include virtual="front_page/background_live.inc" -->
+	
+
+
+
+<div class="content">
+
+	<h2>Welcome to Arachne Live, the MINER&nu;A web event display.</h3>
+
+	<h4>MINER&nu;A</h4>
+
+	<p>MINERvA is a neutrino scattering experiment which uses the NuMI beamline at Fermilab.  The NuMI beamline is a very intense beam of the elementary particles called neutrinos.  The MINERvA detector is located in an underground chamber in the path of the beamline.  We can't detect neutrinos directly but when a neutrino interacts with a particle in the detector we can detect the products of that interaction.  MINERvA studies these neutrino interactions in support of neutrino oscillation experiments. Live allows you to view the latest data as it is collected by the detector.  </p>
+
+	<img src="front_page/detector1.png" height="220px" align="right">
+		
+	<h4>The Detector</h4>
+	
+	<p>The diagrams at the right shows three directions the detector is viewed from with the z axis pointing out of the detector.  The detector is made of overlapping layers of scintillator, a plastic which absorbs the energy of particles and reemits it in the form of a flash of light.  The light deposited in the scintillator is carried through fiberoptic cables to photomultiplier tubes which detect the small flashes of light.  </p>
+	
+	<p>The detector has three sections: a pure scintillator section, the ECAL, and the HCAL. The ECAL has layers of lead in the scintillator while the HCAL has layers of steel in the scintillator. How particles behave in these parts of the detector helps to identify them.  They also stop the particles.</p>
+
+	 <div class="portlet" id="hit-map-port" > 
+      <div class="portlet-header">Hit Maps</div>
+      <div id="hitmaps" class="portlet-content" style="background-color:white;">
+       
+       <!-- left side -->
+        <div style="width: 33%;float: left;">
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">Tower 4</p></div>
+
+          <div class="pad" id="tower4" style=" margin-left: 14px; width:auto; height:80px;"
+          settings="draw_tick_labels_x: false"></div>
+
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">X-View</p></div>
+          <div class="pad" id="xz"     style=" margin-left: 14px; width:auto; height:240px;"
+          settings="draw_tick_labels_x: false"></div>
+
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">Tower 1</p></div>
+          <div class="pad" id="tower1" style=" margin-left: 14px; width:auto; height:80px;"></div>
+        </div>
+        
+        <!-- right side -->
+
+        <div style="width: 33%; float: right">
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">Tower 3</p></div>
+          <div class="pad" id="tower3" style=" margin-left: 14px; width:auto; height:80px;"
+          settings="draw_tick_labels_x: false"></div>
+
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">V-View</p></div>
+          <div class="pad" id="vz"     style=" margin-left: 14px; width:auto; height:240px;"
+          settings="draw_tick_labels_x: false"></div>
+
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">Tower 6</p></div>
+
+          <div class="pad" id="tower6" style=" margin-left: 14px; width:auto; height:80px;"
+          ></div>
+        </div>
+
+        <!-- center -->
+        <div style="width: 33%; margin-left: 33%; margin-right: 33%;" >
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">Tower 5</p></div>
+          <div class="pad" id="tower5" style=" margin-left: 14px; width:auto; height:80px;"
+          settings="draw_tick_labels_x: false"></div>
+
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">U-View</p></div>
+
+          <div class="pad" id="uz"     style=" margin-left: 14px; width:auto; height:240px;"
+          settings="draw_tick_labels_x: false"></div>
+
+          <div style="float:left; overflow:hidden; width:14px;"><p class="vertical-text">Tower 2</p></div>
+          <div class="pad" id="tower2" style=" margin-left: 14px; width:auto; height:80px;"></div>
+        </div>
+
+        
+        
+        
+      </div>
+    </div>
+	
+	
+
+<div id="contentright">	
+  <div class="dock" id="content-topright" float="right" style="margin-left:15px;">
+        <div class="portlet" id="tridview-port">
+      <div class="portlet-header">3D Display</div>     
+
+      <div class="portlet-content" style="height: inherit;" >
+      <div id="triD-view" style="height: 250px;"></div> 
+        <div id="triD-controls">
+          <span class="trid-ctl trid-zoom-in"   >Zoom In</span>
+          <span class="trid-ctl trid-zoom-out"  >Zoom Out</span>
+
+          <span class="trid-ctl trid-pan-left"  >Pan Left</span>
+          <span class="trid-ctl trid-pan-right" >Pan Right</span>
+          <span class="trid-ctl trid-pan-up"    >Pan Up</span>
+          <span class="trid-ctl trid-pan-down"  >Pan Down</span>
+          <span class="trid-ctl trid-pan-upstream"    >Pan Upstream</span>
+          <span class="trid-ctl trid-pan-downstream"  >Pan Downstream</span>
+
+          <input type="checkbox" class="trid-ctl trid-autorotate" id="trid-check1" /><label for="trid-check1">AutoRotate</label>
+          <span class="trid-ctl trid-reset"     >Reset</span>
+          <span class="trid-ctl-mouse-set">
+          		<input type="radio" class="trid-ctl trid-ctl-mouse-rotate" name="trid-radio" id="trid-radio1" value="rotate" checked="yes"/><label for="trid-radio1">Mouse Rotate</label>
+          		<input type="radio" class="trid-ctl trid-ctl-mouse-pan"    name="trid-radio" id="trid-radio2" value="pan" />             <label for="trid-radio2">Mouse Pan</label>
+          </span>
+
+        </div>
+      </div>
+    </div>
+</div>	
+</div>
+
+<p>The Hit Maps display in Arachne shows the event from the X, U, and V views of the detector. The towers surrounding the inner detector are called the veto.  The small  rectangles are called hits, the color of a hit is determined by its energy. The green line is called a track, tracks are made by a particle travailing through the detractor.</p>
+
+<p>The 3D Display shows only the tracks in a three dimensional view of the detector. The blue hexagons represent the front and back of the MINERvA detector and the black shape represents the front of the MINOS detector located behind MINERvA.</p>	
+
+<div id="contentright">	
+	   <div class="portlet" id="time-hist-port" style="margin-left:15px;"> 
+     <div class="portlet-header">Time Histogram</div>
+     <div class="portlet-content" id="timehist-enclosure">
+       <div class="pad" id="timehist-div" style="height: 150px;"></div>
+
+         <div id="timehist-options">
+         <button class="ui-state-default ui-corner-all open-dialog" id='open-time-dialog'>Options</button>        
+         
+        
+        <a class="soundlink" href="#">Play Sound</a>
+        
+        <span class="reset-button"     >Reset</span>          
+        
+         <div class="dialog" id="time-dialog" title="Time Histogram Options">
+
+                     <input class="saveable" type="checkbox" id="ctl-cut-timeunder" 
+        name="ctl-cut-timeunder" 
+        checked="yes" /><label for="ctl-cut-timeunder">Cut underscale</label><br/>
+                     <input class="saveable" type="checkbox" id="ctl-cut-timeover"  
+        name="ctl-cut-timeover"  
+        checked="yes" /><label for="ctl-cut-timeover">Cut overscale</label><br/>
+
+                     Current range: <span id="cutinfo-time-range"></span><br/>
+         </div>
+        </div>
+     </div>
+    </div>
+    
+</div>
+
+<h4>Time</h4>
+
+<p>When you view an entry (also called a gate) in Arachne you see all the events that occurred in the detector during one pulse of the beam.  A slice is a piece of time in that entry that shows the event(s) that happened in that smaller time period.  Think of the entry as a long exposure picture and the slice as a shorter exposure.  You can use the previous slice, next slice, and all hits buttons to navigate through the entry and you current slice will be highlighted in the time histogram.</p>
+
+
+
+<div id="contentright">	
+	  <div class="dock" id="content-topleft" style="margin-left:15px;">
+	          <div class="portlet" id="ph-hist-port"> 
+	         <div class="portlet-header">PH Histogram</div>
+	         <div class="portlet-content" id="ph-hist-enclosure" >
+
+	           <div class="pad" id="phhist-div" style="height: 140px;"></div>
+	           <div id="phhist-options" >
+	             <button class="ui-state-default ui-corner-all open-dialog" id='open-pe-dialog'>Options</button>    
+	             <select  id="ctl-ph-field" style="font-size:0.7em">
+	               <option value="qlo">Qlow</option>
+	               <option value="qmed">Qmed</option>
+	               <option value="qhigh">Qhigh</option>
+
+	               <option value="pe" >PE</option>
+	               <option value="norm_energy" selected="yes">MeV</option>
+	               <option value="time">Time (ns)</option>
+	               <option value="slice">Slice</option>
+	             </select>
+	             <span class="reset-button"     >Reset</span>
+
+	             <div class="dialog" id="pe-dialog" title="PH Histogram Options">
+	               <input type="checkbox" id="ctl-cut-phunder" name="ctl-cut-phunder" checked="yes" /><label for="ctl-cut-phunder">Cut underscale</label><br/>
+	               <input type="checkbox" id="ctl-cut-phover"  name="ctl-cut-phover"                /><label for="ctl-cut-phover">Cut overscale</label><br/>
+	               <input type="checkbox" id="ctl-ph-includeID" name="ctl-ph-includeID" checked="yes" /><label for="ctl-ph-includeID">ID hits</label><br/>
+	               <input type="checkbox" id="ctl-ph-includeOD" name="ctl-ph-includeOD"                /><label for="ctl-ph-includeOD">OD hits</label><br/>
+	               <br/>
+	               Current PE range: <span id="cutinfo-ph-range"></span><br/>
+
+	             </div>
+	             </div>
+	        </div>
+	      </div>
+</div>
+ </div>
+
+	<h4>Energy</h4>
+
+	<p>The PH Histogram displays the number of hit of a given energy. The energy is automatically shown in MeV (megaelectronvolts), a very useful unit of energy for particle physics. Another common unit is PE (potoelectrons), not to be confused with potential energy. You can remove lower energy hits from the hit maps display by clicking and dragging the histogram to the left.</p>
+
+
+
+	<img src="front_page/Otterbein.png" width="50px" align="left"/>
+
+	<p>Created by Molly J. Clairemont </a> at <a class="two" href="http://www.otterbein.edu" target="_blank">Otterbein University </a><br/>
+Send comments to Molly at <a class="two" href="mailto:molly.clairemont@otterbein.edu"> molly.clairemont@otterbein.edu</a><br/>
+Graphic Design by <a class="two" href="mailto:erinl.creative@gmail.com">Erin Cochran</a>.</p>
+
+	<img src="front_page/minerva-micro.jpg" width="50px" align="left"/>	
+
+	<p>The <a class="two" href="http://minerva.fnal.gov/" target="_blank"> MINER&nu;A </a> collaboration<br/>
+Located at <a class="two" href="http://www.fnal.gov/" target="_blank"> Fermilab</a>
+	<p/>
+
+
+	
+	
+  <div id="expando-target" style="z-index:998;"></div>
+
+  <div id="content" style="display:none;">
+  <div id="content-top">
+    <!-- INPUT -->
+    <div class="portlet" id="source-port"> <div class="portlet-header">Data Source</div>
+<div id="tabs" class="portlet-content">
+	<ul>
+		<li><a href="#input-rsg">Official DSTs</a></li>
+		<li><a href="#input-fe">DST by Filename</a></li>
+
+	<li><a href="#input-xmlurl">URL to an XML file</a></li>
+    <li><a href="#input-uploadxml">Load XML File</a></li>
+    <li><a href="#input-xmltext">Cut-and-paste xml</a></li>
+    <!-- <li><a href="#input-livedata">Live Data</a></li> -->
+	</ul>
+	<div id="input-rsg" >
+	  <form id="gateForm"  action="" >
+
+    <table border="0" width="100%">
+    <tr>
+    <td><select id="inRsgDet">
+        <option value="MV" >MV</option>
+        <option value="MN" selected="selected">MN</option>
+        <option value="TP"                    >TP</option>
+        <option value="SIM"                    >SIM</option>
+
+        </select></td>
+    <td><select id="inRsgRecoVer"><option value="v6r2p1"                  >v6r2p1</option>
+                                  <option value="v7r0p1"                  >v7r0p1</option>
+                                  <option value="v7r0p3"                  >v7r0p3</option>
+                                  <option value="v7r2"                    >v7r2</option>
+                                  <option value="v7r3"                    >v7r3</option>
+
+                                  <option value="v7r3p1"                  >v7r3p1</option>                                      
+                                  <option value="v7r4">v7r4</option>
+                                  <option value="v7r5" >v7r5</option>
+                                  <option value="v7r5p1" selected="selected">v7r5p1</option>
+                                  
+                                  
+        </select><br/></td>
+    <td><label>Run:   </label><input class="inRun    ui-state-default" type="text" size="5" id="inRsgRun"    value="1020"/></td>
+    <td><label>SubRun:</label><input class="inSubrun ui-state-default" type="text" size="5" id="inRsgSubrun" value="10"/></td>
+
+    <td><label>Gate:  </label><input class="inGate   ui-state-default" type="text" size="5" id="inRsgGate"   value="13" />
+      </td>
+    <td> <input class="ui-state-default ui-corner-all" type="button" id="go_rsg" value="Go!" /></td>
+    </tr>
+    </table>
+    </form> 
+  </div>
+	<div id="input-fe">
+
+	  <form id="fileform"  action="" > 
+    <label>Filename:</label>
+      <input type="text" style="width:500px" class="ui-state-default"  id="inFilename" value="/mnt/bluearc/data_processing/numib/Run_580/dst/TP_00000580_0004_numib_v04_0905310748_DST_v6r2p1.root"/>
+      <label>Cut:  </label><input style="width:200px" class="inSelection ui-state-default" type="text" id="inFeSelection"   value="1"/>
+      <label>Entry:  </label><input class="inEntry ui-state-default" type="text" size="5" id="inFeEntry"   value="1"/>
+      <input class="ui-state-default ui-corner-all" type="button" id="go_fe" value="Go!" />
+     </form> 
+	</div>
+
+  <div id="input-xmlurl">
+    <table border="0" width="100%">
+      <tr>
+        <td>
+          <label>URL to XML file (must be same as web page host)</label> 
+          <input style="width:400px" type="text" class="ui-state-default" id="inXmlUrl" value="" />
+        </td>
+        <td>
+          <input class="ui-state-default ui-corner-all" type="button" id="go_xmlurl" value="Go!" />
+
+        </td>
+      </tr>
+    </table>
+  </div>
+	  <div id="input-uploadxml">
+	    <table border="0" width="100%">
+	     <tr>
+	       <td>
+	         <div id="inFileUpload" class="ui-state-default ui-corner-all ui-button">Upload XML File</div>
+
+	       </td></tr>
+	    </table>
+	  </div>
+  <div id="input-xmltext">
+    <table border="0" width="100%">
+      <tr>
+        <td>
+          Copy or paste the event XML here.<br/>
+
+          <textarea class="ui-state-default"  cols="100" rows="5" style="width: 550px; height: 70px;" id="inXmlText"></textarea> 
+         </td>
+        <td>
+          <input class="ui-state-default ui-corner-all" type="button" id="go_xmltext" value="Load" /><br/><br/>
+         </td>
+      </tr>
+    </table>  
+  </div>
+  <div id="input-livedata">
+
+      <input class="ui-state-default ui-corner-all" type="button" id="go_livedata" value="Get Live Data!" />
+      <label for="ctl-refresh-auto">Auto-refresh Live Data:</label><input id="ctl-refresh-auto" type="checkbox" />
+      <label for="ctl-refresh-period">Refresh data every:</label><input id="ctl-refresh-period" type="text" size="5" class=".saveable" value="30.0" />seconds
+
+      <br/>
+
+  </div>
+
+
+
+
+	<div id="input-rsg" style="display:none;" >
+  	<div id="input-simple-fe" >
+  	  <form id="fileform"  action="" > 
+        <span style="display: none;">
+        <label>Cut:  </label><input style="width:200px" class="inSelection ui-state-default" type="text" id="inFeSelection"   value="1"/>
+        <input type="text" style="width:500px" class="ui-state-default"  id="inFilename" value=""/>
+        </span>
+
+        <br/>
+        <label>Entry:  </label><input class="inEntry ui-state-default" type="text" size="5" id="inFeEntry"   value="1"/>
+        <input class="ui-state-default ui-corner-all" type="button" id="go_fe" value="Go!" />
+       </form> 
+
+  	</div>
+	  <form id="gateForm"  action="" >
+    <table border="0" width="100%">
+    <tr>
+    <td><select id="inRsgDet">
+
+        <option value="MV" >MV</option>
+        <option value="MN" selected="selected">MN</option>
+        <option value="TP"                    >TP</option>
+        <option value="SIM"                    >SIM</option>
+        </select></td>
+    <td><select id="inRsgRecoVer"><option value="v6r2p1"                  >v6r2p1</option>
+
+                                  <option value="v7r0p1"                  >v7r0p1</option>
+                                  <option value="v7r0p3"                  >v7r0p3</option>
+                                  <option value="v7r2"                    >v7r2</option>
+                                  <option value="v7r3"                    >v7r3</option>
+                                  <option value="v7r3p1"                  >v7r3p1</option>                                      
+                                  <option value="v7r4">v7r4</option>
+
+                                  <option value="v7r5" >v7r5</option>
+                                  <option value="v7r5p1" selected="selected">v7r5p1</option>
+                                  
+                                  
+        </select><br/></td>
+    <td><label>Run:   </label><input class="inRun    ui-state-default" type="text" size="5" id="inRsgRun"    value="1020"/></td>
+    <td><label>SubRun:</label><input class="inSubrun ui-state-default" type="text" size="5" id="inRsgSubrun" value="10"/></td>
+    <td><label>Gate:  </label><input class="inGate   ui-state-default" type="text" size="5" id="inRsgGate"   value="13" />
+
+      </td>
+    <td> <input class="ui-state-default ui-corner-all" type="button" id="go_rsg" value="Go!" /></td>
+    </tr>
+    </table>
+    </form> 
+  </div>
+
+
+</div> <!-- portlet-content -->
+</div>  <!-- portlet -->
+
+    
+
+        <div class="portlet" id="slice-info-port">
+        <div class="portlet-header">Slice Info</div>
+        <div id="event-info" class="event-info portlet-content">
+          <table border="0" class="event-info" >
+          <tr>  <td width="100px" class="event-info-caption">Event ID</td>         <td>
+                <span class="event-info-det"></span>|<span class="event-info-run"></span>|<span class="event-info-subrun"></span>|<span class="event-info-gate"></span>|<span class="event-info-slice"></span>
+
+                <tr>  <td class="event-info-caption">SW Ver</td>          <td class="event-info-reco-version"></td></tr>
+                <tr>  <td class="event-info-caption">Time</td>       <td>
+                        <span class="event-info-local-time"></span> 
+                        <span class="event-info-local-date"></span> 
+                        <span class="event-info-local-tz"></span>
+                        (<span class="event-info-age"></span> ago)</td></tr>
+
+                  </td></tr>
+                <tr>  <td class="event-info-caption">Hits</td>      <td><span class="event-info-gate-idhits"></span>&nbsp;ID, <span class="event-info-gate-odhits"></span>&nbsp;OD</td></tr>
+                <tr>  <td class="event-info-caption">Reco</td>      <td>
+                          <span class="event-info-num-clusters"></span>&nbsp;clusters, 
+                          <span class="event-info-num-tracks"></span>&nbsp;tracks,
+                          <span class="event-info-num-vertices"></span>&nbsp;vertices</td></tr>
+
+                          
+
+          </table>
+          
+          <table border="0" class="event-info slice-info"  >
+            <tr>  <td class="slice-color event-info-caption">Slice</td><td> <span class="slice-color event-info-slice"></span> of <span class="s event-info-nslices"></span></td></tr>
+            <tr>  <td class="event-info-caption">Hits</td>      <td><span class="event-info-idhits"></span>&nbsp;ID, <span class="event-info-odhits"></span>&nbsp;OD</td></tr>
+
+            <tr>  <td class="event-info-caption">Mean time</td>        <td class="event-info-tmean" ></td></tr>
+            <tr>  <td class="event-info-caption">Total PE</td>         <td class="event-info-calpe" ></td></tr>
+            <tr>  <td class="event-info-caption">Vis Energy</td>   <td class="event-info-mev" ></td></tr>
+            <tr>  <td class="event-info-caption">Filters</td>        <td class="event-info-filters" ></td></tr>
+
+          </table>
+          
+          <div class="subtable">
+            <div class="collapsible-title" revealed='false'>Other Information</div>
+            <div class="collapsible">
+              <table border="0" class="event-info" >
+                          <tr>  <td class="event-info-caption">ID Hits per module</td><td class="event-info-id-hits-per-mod">  </td></tr>
+                          <tr>  <td class="event-info-caption">OD Hits per module</td><td class="event-info-od-hits-per-mod">  </td></tr>
+
+                          <tr>  <td class="event-info-caption">Total PE</td>          <td class="event-info-total-pe">         </td></tr>
+                          <tr>  <td class="event-info-caption">Detector</td>       <td class="event-info-detector">    </td></tr>
+                          <tr>  <td class="event-info-caption">Detector Config</td><td class="event-info-det-config">  </td></tr>
+
+                          <tr>  <td class="event-info-caption">Trigger type</td>   <td class="event-info-trigger-type"></td></tr>
+                          <tr>  <td class="event-info-caption">Cal. Settings</td>  <td class="event-info-cal-settings"></td></tr>
+                          <tr>  <td class="event-info-caption">GL Gate</td>        <td class="event-info-gl-gate">     </td></tr>
+                          <tr>  <td class="event-info-caption">Readout</td>        <td class="event-info-readout">     </td></tr>
+
+                          <tr>  <td class="event-info-caption">Errors</td>         <td class="event-info-errors">      </td></tr>
+              </table>
+            </div>
+          </div>
+        </div> <!-- slice-info -->
+        
+        
+      </div>
+
+
+  </div>
+
+  
+  <!-- hidden things -->
+  <div style="display: none;">
+    
+      <div class="portlet" id="config-port"> 
+      <div class="portlet-header">Configuration:</div>
+      <div class="portlet-content">
+
+        <select  id="ctl-color-scale"><option value="RedBluePalette">Red-Blue Palette</option><option value="BrownPurplePalette" selected="selected">Brown-Purple Palette</option></select><br/>
+
+        <div><input type="checkbox" id="ctl-magnifying-glass"   name="ctl-magnifying-glass"   checked="yes" /><label for="ctl-magnifying-glass"  >Magnifying glass</label></div>
+        <div id="mag-sliders">
+          <div>
+          <label for="ctl-magnifier-size">Mag. Size</label>         
+          <input id="ctl-magnifier-size" type="text" value="80" size="4" />
+          </div>
+          <div id="ctl-magnifier-size-slider"></div>
+          <div>
+
+          <label for="ctl-magnifier-mag">Magnification</label>         
+          <input id="ctl-magnifier-mag"  type="text" value="2.5" size="4" />          
+          </div>
+          <div id="ctl-magnifier-mag-slider"></div>
+        </div>
+        <div><input type="checkbox" id="ctl-show-hitmap-hits"   name="ctl-show-hitmap-hits"   checked="yes" /><label for="ctl-show-hitmap-hits"  >Show hits</label></div>
+        <div><input type="checkbox" id="ctl-show-hitmap-blobs"   name="ctl-show-hitmap-blobs"   checked="no" /><label for="ctl-show-hitmap-blobs"  >Show blobs</label></div>
+        <div><input type="checkbox" id="ctl-show-hitmap-tracks" name="ctl-show-hitmap-tracks" checked="yes" /><label for="ctl-show-hitmap-tracks">Show tracks</label></div>
+
+        <div><input type="checkbox" id="ctl-show-hitmap-vertices" name="ctl-show-hitmap-vertices" checked="yes" /><label for="ctl-show-hitmap-vertices">Show vertices</label></div>
+        <button class="open-dialog" id='open-hit-info'>Show Hit Info</button>        
+        <div>"One push-o" presets:</div>
+        <button class="ui-state-default ui-corner-all" id='ctl-std'>0-30 pe</button>
+        <button class="ui-state-default ui-corner-all" id='ctl-2pe'>2-30 pe</button>
+        <button class="ui-state-default ui-corner-all" id='ctl-3pe'>3-30 pe</button>
+
+        <button class="ui-state-default ui-corner-all" id='ctl-5pe'>5-30 pe</button>
+        <button class="ui-state-default ui-corner-all" id='ctl-100pe'>2-100 pe</button>
+        <br/>
+        <button class="ui-state-default ui-corner-all" id='ctl-save-config'>Save</button>        
+        <button class="ui-state-default ui-corner-all" id='ctl-load-config'>Load</button>        
+        <button class="ui-state-default ui-corner-all" id='ctl-scanner-config'>Scan</button>        
+        <button class="ui-state-default ui-corner-all" id='ctl-restore-defaults'>Restore Defaults</button>
+
+      </div>      
+    </div> <!-- configuration portlet -->
+
+
+  </div>
+
+
+    <!-- INPUT -->
+  </div> <!-- content-top -->
+
+
+    
+  </div> <!-- content-right -->
+
+
+  </div> <!-- content -->
+
+  
+  
+  <!-- hidden stuff. -->
+  
+
+  
+  <div id="hit-info" style="width: 150px; height: 430px" title="Hit Info"></div>
+  <div id="track-info" class="triangle-isosceles left floating">
+    <span id="track-info-pane"></span>
+
+    <div class="unit-ctl">
+    		<input type="radio"  name="unit-ctl" id="unit-radio1" value="MeV" checked="yes"/><label for="unit-radio1">MeV</label>
+    		<input type="radio"  name="unit-ctl" id="unit-radio2" value="SI" />             <label for="unit-radio2">SI</label>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

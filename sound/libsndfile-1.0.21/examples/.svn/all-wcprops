@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/Makefile.in
+END
+sndfilehandle.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/sndfilehandle.cc
+END
+sndfile-to-text
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/sndfile-to-text
+END
+list_formats.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/list_formats.c
+END
+sfprocess.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/sfprocess.c
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/generate
+END
+make_sine
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/make_sine
+END
+sndfilehandle
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/sndfilehandle
+END
+list_formats
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/list_formats
+END
+sndfile-to-text.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/sndfile-to-text.c
+END
+sfprocess
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/sfprocess
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/Makefile.am
+END
+generate.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/generate.c
+END
+make_sine.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/make_sine.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Arachne/!svn/ver/1134/Arachne/json/sound/libsndfile-1.0.21/examples/Makefile
+END

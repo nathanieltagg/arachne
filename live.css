@@ -1,0 +1,90 @@
+#header{
+  margin-left: 260px;
+  margin-right: 500px;
+}
+
+#content {
+	width: auto;
+/*  margin-left: 50px; */
+	margin-right: 0px; 
+	margin-left: 260px; 
+	
+}
+
+#footer {
+  clear:both;
+  width: auto;
+  margin: auto;
+}
+
+
+#content-topright {
+  float: right; width: 50%;
+}
+#content-topleft {
+  width: 49%;
+}
+
+#nav-sidebar {
+  float: left;
+  margin-left: 0px;
+  width: 250px;
+/*  position: fixed;*/
+}
+
+#slice-navigation button {
+  font-size: 12px;
+  width:100px;
+}
+
+#slice-navigation div.shift{
+  margin-left: 40px;
+}
+
+/*individual tunings*/
+#phhist-div {
+  height: 95px;
+/*  margin-right: 100px;*/
+}
+
+#timehist-div {
+  height: 95px;
+/*  margin-right: 100px;*/
+}
+
+#triD-view {
+  height: 235px;
+}
+
+#mri-view{
+  height: 230px;
+}
+
+#timehist-enclosure {
+  position: relative;
+}
+
+/*#timehist-options {
+  position:absolute;
+  top: 0;
+  right: 0;
+  float:right;
+  width: 100px;
+}
+*/
+
+#ph-hist-enclosure {
+  position: relative;
+}
+
+/*#phhist-options{
+  position:absolute;
+  top: 0;
+  right: 0;
+  float:right;
+  width: 100px;  
+}
+*/
+.portlet-header{
+  font-size: 0.6em;
+}

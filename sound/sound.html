@@ -1,0 +1,45 @@
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <html>
+  	<head>
+  		<meta charset="utf-8">
+
+<title>Arachne-Sound</title>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script> 
+
+<script type="text/javascript" src="soundmanagerv296a-20100624/script/soundmanager2.js"></script>
+
+
+<script type="text/javascript" charset="utf-8">
+soundManager.url = 'soundmanagerv296a-20100624/swf';
+
+soundManager.onload = function() {
+  var mySound = soundManager.createSound({
+    id: 'aSound',
+    // url: "snd_QLXRsEWYnM.wav",
+    url: "http://localhost/~tagg/Arachne/sound/sound.cgi?dur=2&vtx=1,1,1,0.5&trk=1,1,1,0.5,4,200,-100,1000&trk=1,1,1,0.5,2,-800,0,2000"
+    // onload: [ event handler function object ],
+    // other options here..
+  });
+  console.log(mySound);
+  mySound.play();
+}
+
+</script>
+</head>
+<body>
+<h2>Sound-Demo</h2>
+<div id="sm2-container">
+ <!-- SM2 flash goes here -->
+
+</div>
+
+<ul class="graphic">
+<li><a href="http://localhost/~tagg/Arachne/sound/sound.cgi?dur=2&vtx=1,1,1,0.5&trk=1,1,1,0.5,4,200,-100,1000&trk=1,1,1,0.5,2,-800,0,2000">Ricochet</a></li>
+
+</ul>
+<a class="media"   href="ricochet.wav">Ricochet</a> 
+<a class="media"   href="snd_Hgjg_ixr0b.mp3">blah</a> 
+<!-- <a class="media"   href="eventSound.cgi?dur=2&vtx=1,1,1,0.5&trk=1,1,1,0.5,4,200,-100,1000&trk=1,1,1,0.5,2,-800,0,2000&.wav">WAV</a>  -->
+
+</body>
+</html>
