@@ -1,0 +1,26 @@
+Servers that serve json descriptions of events from either reco or dst files.
+
+Relevant files for the reco file-based server:
+
+build-server-reco.sh
+--------------------
+
+Checks out and builds the reco file server, which lives in a
+poorly-named package in Personal/rodriges. The script should be run as
+minervapro. To change the software version used, modify the
+mnvsoftVersion variable in the script, and make the same change in
+ntuple-server-reco.sh
+
+ntuple-server-reco.sh
+---------------------
+
+Runs the reco file server, which involves setting up the appropriate
+version of the minerva software and then running SystemTestsApp with
+an appropriate options file.
+
+
+I haven't documented the DST file-based server, because I didn't write it.
+
+Philip Rodrigues
+2014-01-02
+

@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/Arachne/!svn/ver/1426/Arachne/json/html
+END
+electronics-view-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/electronics-view-portlet.inc
+END
+hit-map-core-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/hit-map-core-portlet.inc
+END
+veto-view-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/veto-view-portlet.inc
+END
+time-histogram-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/time-histogram-portlet.inc
+END
+slice-navigation-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/slice-navigation-portlet.inc
+END
+track-hider-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/track-hider-portlet.inc
+END
+data-source-portlet-reco.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Arachne/!svn/ver/1413/Arachne/json/html/data-source-portlet-reco.inc
+END
+minos.inc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Arachne/!svn/ver/1167/Arachne/json/html/minos.inc
+END
+mri-view-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/mri-view-portlet.inc
+END
+hit-map-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/hit-map-portlet.inc
+END
+energy-profile.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/energy-profile.inc
+END
+mc-info.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Arachne/!svn/ver/1236/Arachne/json/html/mc-info.inc
+END
+help.inc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/help.inc
+END
+trid-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/Arachne/!svn/ver/1231/Arachne/json/html/trid-portlet.inc
+END
+ph-histogram-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/Arachne/!svn/ver/1361/Arachne/json/html/ph-histogram-portlet.inc
+END
+usertrack-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Arachne/!svn/ver/1412/Arachne/json/html/usertrack-portlet.inc
+END
+data-portlet-live.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/data-portlet-live.inc
+END
+credits.inc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/credits.inc
+END
+configuration-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Arachne/!svn/ver/1426/Arachne/json/html/configuration-portlet.inc
+END
+gate-info-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/gate-info-portlet.inc
+END
+event-info-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/event-info-portlet.inc
+END
+big-xz-hitmap-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/big-xz-hitmap-portlet.inc
+END
+scan-entry-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/Arachne/!svn/ver/1240/Arachne/json/html/scan-entry-portlet.inc
+END
+mc-digraph.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/mc-digraph.inc
+END
+libraries.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Arachne/!svn/ver/1370/Arachne/json/html/libraries.inc
+END
+slice-info-simple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/slice-info-simple.inc
+END
+data-portlet-simple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Arachne/!svn/ver/1357/Arachne/json/html/data-portlet-simple.inc
+END
+beam-info.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/beam-info.inc
+END
+expert-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/expert-portlet.inc
+END
+data-source-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/Arachne/!svn/ver/1428/Arachne/json/html/data-source-portlet.inc
+END
+slice-nav-portlet-simple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/slice-nav-portlet-simple.inc
+END
+MOTD.inc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/Arachne/!svn/ver/1426/Arachne/json/html/MOTD.inc
+END
+scan-info-portlet.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/scan-info-portlet.inc
+END
+hit-map.old
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Arachne/!svn/ver/1134/Arachne/json/html/hit-map.old
+END

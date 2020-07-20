@@ -1,0 +1,9 @@
+<div style="display:none" id="MOTD">
+  <p><img src="images/busy.gif" /> &nbsp;&nbsp;Querying server for event data...</p>
+  <p><em>Message of the day:</em><br/>
+  <p></p>
+  <p>Now migrated to a new, faster computer! Let Nathaniel know if there are any issues.</p>
+  <p>Can now access files on dCache via dcap URLs or pnfs paths. Report any problems to Phil.</p>
+  <p>One-push button overhaul for Rik. Now remembers state.</p>
+  <p>Added user track feature for Chris Marshall</p>
+</div>
