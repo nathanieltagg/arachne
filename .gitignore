@@ -1,0 +1,12 @@
+.swn
+.swo
+.swp
+.svn
+.htaccess
+*.tmp
+*.log.*
+.svn*
+ntuple_server/myroot
+ntuple_server/ntuple-server
+ntuple_server/ntuple-server.tmproj
+

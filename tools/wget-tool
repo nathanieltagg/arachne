@@ -1,0 +1,2 @@
+# Use this command to get current trunk version on a computer that doesn't have SVN:
+wget -m -np -nH --cut-dirs=4 http://neutrino/svn-raw/Arachne/Arachne/trunk/
