@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/libsndfile-1.0.21/programs
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/libsndfile-1.0.21/programs
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-06-25T14:03:16.193296Z
-446
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -26,43 +26,9 @@ tagg
 
 f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
-sndfile-cmp.c
-file
-
-
-
-
-2014-01-02T20:22:09.000000Z
-f0b2ee5bab3a465bfc9a0cdd1c7c9dc3
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4337
-
 Makefile.in
 file
-
+1438
 
 
 
@@ -94,9 +60,43 @@ tagg
 
 23846
 
+sndfile-cmp.c
+file
+1438
+
+
+
+2014-01-02T20:22:09.000000Z
+f0b2ee5bab3a465bfc9a0cdd1c7c9dc3
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4337
+
 sndfile-convert.c
 file
-
+1438
 
 
 
@@ -128,43 +128,9 @@ tagg
 
 9245
 
-sndfile-play-beos.cpp
-file
-
-
-
-
-2014-01-02T20:22:09.000000Z
-8c7384f86b7ee6075f22983cdf3a88aa
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3468
-
 sndfile-info.c
 file
-
+1438
 
 
 
@@ -196,9 +162,43 @@ tagg
 
 13662
 
+sndfile-play-beos.cpp
+file
+1438
+
+
+
+2014-01-02T20:22:09.000000Z
+8c7384f86b7ee6075f22983cdf3a88aa
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3468
+
 test-sndfile-metadata-set.py
 file
-
+1438
 
 
 
@@ -232,7 +232,7 @@ has-props
 
 sndfile-metadata-get.c
 file
-
+1438
 
 
 
@@ -266,7 +266,7 @@ tagg
 
 sndfile-interleave.c
 file
-
+1438
 
 
 
@@ -300,7 +300,7 @@ tagg
 
 sndfile-play.c
 file
-
+1438
 
 
 
@@ -332,43 +332,12 @@ tagg
 
 27649
 
-common.c
-file
-
-
-
-
-2014-01-02T20:22:09.000000Z
-1e1579311acd4515b87429e84a2e200d
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10294
+.deps
+dir
 
 Makefile.am
 file
-
+1438
 
 
 
@@ -400,17 +369,14 @@ tagg
 
 1569
 
-.deps
-dir
-
-sndfile-deinterleave.c
+common.c
 file
-
+1438
 
 
 
 2014-01-02T20:22:09.000000Z
-317f74517fc91cde363429f08a9d55eb
+1e1579311acd4515b87429e84a2e200d
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -435,11 +401,11 @@ tagg
 
 
 
-5079
+10294
 
 sndfile-concat.c
 file
-
+1438
 
 
 
@@ -471,9 +437,43 @@ tagg
 
 5038
 
+sndfile-deinterleave.c
+file
+1438
+
+
+
+2014-01-02T20:22:09.000000Z
+317f74517fc91cde363429f08a9d55eb
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5079
+
 sndfile-metadata-set.c
 file
-
+1438
 
 
 
@@ -507,7 +507,7 @@ tagg
 
 Makefile
 file
-
+1438
 
 
 
@@ -541,7 +541,7 @@ tagg
 
 common.h
 file
-
+1438
 
 
 

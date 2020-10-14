@@ -1,8 +1,8 @@
 <!-- This library lets me use text functions for non-html5-compliant browsers, using the closest-thing-to-native you can get. -->
-<!-- General-purpose javascript library to help cross-platform compatibility and other issues. see http://jquery.com -->
+<!-- General-purpose javascript library to help cross-platform compatibility and other issues. see //jquery.com -->
 <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.6.custom.css" rel="Stylesheet" media="all"/>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.18.min.js"></script>
@@ -28,11 +28,6 @@
 <script type="text/javascript" src="js/iOS_fixes.js"></script>
 <script type="text/javascript" src="js/jit-yc.js"></script>
 
-<script type="text/javascript" src="js/ZeroClipboard.js"></script>
-<script type="text/javascript" charset="utf-8">
-        ZeroClipboard.setMoviePath( 'js/ZeroClipboard.swf' );
-</script>
-
 <!-- for creating animated gifs. -->
 <script type="text/javascript" src="js/LZWEncoder.js"></script>
 <script type="text/javascript" src="js/NeuQuant.js"></script>
@@ -45,7 +40,7 @@
 
 <!-- firebug lite, for debugging on random browswers. -->
 <!-- <script type='text/javascript' 
-        src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script> -->
+        src='//getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script> -->
 <script type="text/javascript" charset="utf-8">
   if (window['loadFirebugConsole']) {
       window.loadFirebugConsole();

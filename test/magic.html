@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <title>A Magic Table</title>
+		
+  <script type="text/javascript" 
+    src='http://magic-table.googlecode.com/svn/trunk/magic-table/javascript/magic_table.js'></script>
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	    
+  <script type="text/javascript">
+    google.load("visualization", "1");
+    google.setOnLoadCallback(drawVisualization);
+	
+    function drawVisualization()
+    {
+      var rows = 16;
+      var columns = 5;
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'column 1');
+      data.addColumn('number', 'column 2');
+      data.addColumn('number', 'column 3');
+      data.addColumn('number', 'column 4');
+      data.addColumn('number', 'column 5');
+      data.addRows(rows);
+
+      var i = rows - 1;
+      var j;
+		
+      do
+      {
+         j = columns - 1;
+         do
+         {
+            data.setCell(i, j, Math.round(Math.random()*10));
+         }
+         while (j-- > 0) 
+      }
+      while (i-- > 0)
+
+      var vis = new greg.ross.visualisation.MagicTable(document.getElementById('chart_div'));
+
+      options = {};
+      options.tableTitle = "Bar-fill";
+      options.enableFisheye = true;
+      options.enableBarFill = true;
+      options.defaultRowHeight = 25;
+      options.columnWidths = [{column : 0, width : 130}];
+      options.defaultColumnWidth = 60;
+      options.rowHeaderCount = 0;
+      options.columnHeaderCount = 0;
+      options.tablePositionX = 0;
+      options.tablePositionY = 0;
+      options.tableHeight = 403;
+      options.tableWidth = 315;
+
+      vis.draw(data, options);
+  }
+  </script>
+		
+  </head>
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>

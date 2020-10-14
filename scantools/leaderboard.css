@@ -1,0 +1,34 @@
+
+table {
+  font-family:Arial,Verdana;
+  text-align: right;
+}
+
+#maintable {
+  margin: 1em; border-collapse: collapse;
+  border-style: dashed;
+}
+
+td.user,th.user
+{ border: 1px #ccc solid; }
+
+td.progress, th.progress
+{ border: 1px #ccc solid; }
+
+
+/*#progresstable {
+  border: 0; 
+  margin: 0em;
+}
+*/
+td.user {
+  width: 15em;
+}
+
+.completed {
+  background-color: #00CC00;
+}
+
+.assigned {
+  background-color: #FF6666;
+}

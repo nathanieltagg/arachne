@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/libsndfile-1.0.21/examples
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/libsndfile-1.0.21/examples
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-09-09T18:30:53.756798Z
-553
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -28,7 +28,7 @@ f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
 Makefile.in
 file
-
+1438
 
 
 
@@ -62,7 +62,7 @@ tagg
 
 sndfilehandle.cc
 file
-
+1438
 
 
 
@@ -96,7 +96,7 @@ tagg
 
 sndfile-to-text
 file
-
+1438
 
 
 
@@ -130,7 +130,7 @@ has-props
 
 list_formats.c
 file
-
+1438
 
 
 
@@ -164,7 +164,7 @@ tagg
 
 sfprocess.c
 file
-
+1438
 
 
 
@@ -198,7 +198,7 @@ tagg
 
 generate
 file
-
+1438
 
 
 
@@ -232,7 +232,7 @@ has-props
 
 make_sine
 file
-
+1438
 
 
 
@@ -266,7 +266,7 @@ has-props
 
 sndfilehandle
 file
-
+1438
 
 
 
@@ -300,7 +300,7 @@ has-props
 
 list_formats
 file
-
+1438
 
 
 
@@ -332,43 +332,12 @@ has-props
 
 4220
 
-sndfile-to-text.c
-file
-
-
-
-
-2014-01-02T20:22:09.000000Z
-59195582d8c19ccba5a3401db8ab1b66
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3912
+.libs
+dir
 
 sfprocess
 file
-
+1438
 
 
 
@@ -400,12 +369,46 @@ has-props
 
 4208
 
-.libs
+sndfile-to-text.c
+file
+1438
+
+
+
+2014-01-02T20:22:09.000000Z
+59195582d8c19ccba5a3401db8ab1b66
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3912
+
+.deps
 dir
 
 Makefile.am
 file
-
+1438
 
 
 
@@ -437,12 +440,9 @@ tagg
 
 729
 
-.deps
-dir
-
 generate.c
 file
-
+1438
 
 
 
@@ -476,7 +476,7 @@ tagg
 
 make_sine.c
 file
-
+1438
 
 
 
@@ -510,7 +510,7 @@ tagg
 
 Makefile
 file
-
+1438
 
 
 

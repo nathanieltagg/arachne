@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+  
+<html>
+  <head>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>sandbox</title>
+    <link type="text/css" href="css/smoothness/jquery-ui-1.7.2.custom.css" rel="Stylesheet" />	
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="triggers.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      
+
+       
+      
+    
+    $(function(){
+      var d = $("#page-container");
+      
+      var xhttp = $.ajax({
+        type: "GET",
+        url: "gate12.xml",
+        dataType: "xml",
+        async : false
+      });
+      var xml = xhttp.responseXML;
+
+      $.getJSON("gate12.json",function(json){
+        console.log(json);
+        console.log($($("rawhit channel_id",json).get(0)).text());
+        
+      });
+      //svar xml = xhttp.responseXML;
+
+
+      console.log(xhttp);
+      console.log($($("rawhit channel_id",xml).get(0)).text());
+    });
+    </script>
+    
+  </head>
+  <body>
+    <div id="page-container">
+    </div>
+  </body>
+</html>

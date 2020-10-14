@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/css/ui-lightness
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/css/ui-lightness
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-11-09T18:16:00.474782Z
-573
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -28,7 +28,7 @@ f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
 jquery-ui-1.8.6.custom.css
 file
-
+1438
 
 
 

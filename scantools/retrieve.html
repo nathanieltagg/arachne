@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Arachne Scan Retrieval</title>
+  <link rel="icon"  type="image/png" href="images/hex_icon.png" />  <!-- My little icon. -->
+  <script src="http://developer.apple.com/internet/AC_Quicktime.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <p>To see the results of hand-scanning, use the form below. Boxes may be left blank to get all applicable results. Leave all boxes blank to get the complete scan results.</p>
+    <form name="scan_info" action="../scan_server/scan_info.cgi" method="get">
+
+     <table padding="0">
+     <tr><td>User Name: </td><td><input type="text" name="user_name" /> </td></tr>
+     <tr><td>Detector:  </td><td><input type="text" name="det" value="TP"/> </td></tr>
+     <tr><td>Reco Version: </td><td><input type="text" name="recoVer"/> </td></tr>
+     <tr><td>Run:       </td><td><input type="text" name="run" />       </td></tr>
+     <tr><td>Subrun:    </td><td><input type="text" name="subrun" />    </td></tr>
+     <tr><td>Gate:      </td><td><input type="text" name="gate" />      </td></tr>
+     <tr><td>Slice:     </td><td><input type="text" name="slice" />     </td></tr>
+     </table>
+     <input type="checkbox" name="bestonly">Select final submissions only</input><br/>
+     <input type='submit' value="Submit" />
+     
+    </form>
+
+</body>

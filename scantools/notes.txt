@@ -1,0 +1,23 @@
+scaTo split a game, use:
+sed -n 1,100p input.game > output.game
+This takes lines 1-100 inclusive (100 lines total)
+
+
+To make the final cut:
+
+create table scan_final
+select tscans.* 
+ from ( 
+       select  user_name,det,recoVer,run,subrun,gate,slice,max(modification_date) as recdate from tscans 
+       group by user_name,det,recoVer,run,subrun,gate,slice ) as t1 
+          inner join tscans 
+          on ( t1.user_name=tscans.user_name 
+             AND t1.det=tscans.det 
+             AND t1.recoVer=tscans.recoVer 
+             AND t1.run=tscans.run 
+             AND t1.subrun=tscans.subrun 
+             AND t1.gate=tscans.gate 
+             AND t1.slice=tscans.slice 
+             AND t1.recdate=tscans.modification_date)
+	 where tscans.recoVer = "v7r0p1";
+

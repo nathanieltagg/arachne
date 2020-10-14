@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/libsndfile-1.0.21/M4
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/libsndfile-1.0.21/M4
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-06-25T14:03:16.193296Z
-446
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -28,7 +28,7 @@ f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
 gcc_version.m4
 file
-
+1438
 
 
 
@@ -62,7 +62,7 @@ tagg
 
 Makefile.in
 file
-
+1438
 
 
 
@@ -94,43 +94,9 @@ tagg
 
 11764
 
-llrint.m4
-file
-
-
-
-
-2014-01-02T20:22:03.000000Z
-a80e4b42cee424fc7ca970d90af99f72
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1092
-
 libtool.m4
 file
-
+1438
 
 
 
@@ -162,9 +128,43 @@ tagg
 
 260348
 
+llrint.m4
+file
+1438
+
+
+
+2014-01-02T20:22:03.000000Z
+a80e4b42cee424fc7ca970d90af99f72
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1092
+
 shave.m4
 file
-
+1438
 
 
 
@@ -198,7 +198,7 @@ tagg
 
 add_cflags.m4
 file
-
+1438
 
 
 
@@ -232,7 +232,7 @@ tagg
 
 lt~obsolete.m4
 file
-
+1438
 
 
 
@@ -264,43 +264,9 @@ tagg
 
 5707
 
-ltsugar.m4
-file
-
-
-
-
-2014-01-02T20:22:03.000000Z
-bc2f6032c98896249eadb56177c7d357
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4372
-
 octave.m4
 file
-
+1438
 
 
 
@@ -332,9 +298,43 @@ tagg
 
 4295
 
+ltsugar.m4
+file
+1438
+
+
+
+2014-01-02T20:22:03.000000Z
+bc2f6032c98896249eadb56177c7d357
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4372
+
 mkoctfile_version.m4
 file
-
+1438
 
 
 
@@ -368,7 +368,7 @@ tagg
 
 extra_pkg.m4
 file
-
+1438
 
 
 
@@ -402,7 +402,7 @@ tagg
 
 ltversion.m4
 file
-
+1438
 
 
 
@@ -436,7 +436,7 @@ tagg
 
 add_cxxflags.m4
 file
-
+1438
 
 
 
@@ -468,43 +468,9 @@ tagg
 
 435
 
-lrint.m4
-file
-
-
-
-
-2014-01-02T20:22:03.000000Z
-e4012010a31c47947a31fe7963bdc6b8
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1061
-
 flexible_array.m4
 file
-
+1438
 
 
 
@@ -536,9 +502,43 @@ tagg
 
 985
 
+lrint.m4
+file
+1438
+
+
+
+2014-01-02T20:22:03.000000Z
+e4012010a31c47947a31fe7963bdc6b8
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1061
+
 Makefile.am
 file
-
+1438
 
 
 
@@ -572,7 +572,7 @@ tagg
 
 ltoptions.m4
 file
-
+1438
 
 
 
@@ -606,7 +606,7 @@ tagg
 
 clip_mode.m4
 file
-
+1438
 
 
 
@@ -640,7 +640,7 @@ tagg
 
 extra_largefile.m4
 file
-
+1438
 
 
 
@@ -674,7 +674,7 @@ tagg
 
 lrintf.m4
 file
-
+1438
 
 
 
@@ -708,7 +708,7 @@ tagg
 
 endian.m4
 file
-
+1438
 
 
 
@@ -742,7 +742,7 @@ tagg
 
 Makefile
 file
-
+1438
 
 
 

@@ -1,0 +1,7 @@
+
+RewriteEngine On
+RewriteBase /Arachne/roundup
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule (.*)$ read.cgi?$1

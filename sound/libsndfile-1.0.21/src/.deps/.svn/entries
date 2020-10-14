@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/libsndfile-1.0.21/src/.deps
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/libsndfile-1.0.21/src/.deps
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-06-25T14:03:16.193296Z
-446
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -28,7 +28,7 @@ f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
 test_log_printf.Po
 file
-
+1438
 
 
 
@@ -62,7 +62,7 @@ tagg
 
 g72x.Plo
 file
-
+1438
 
 
 
@@ -96,7 +96,7 @@ tagg
 
 voc.Plo
 file
-
+1438
 
 
 
@@ -130,7 +130,7 @@ tagg
 
 common.Plo
 file
-
+1438
 
 
 
@@ -164,7 +164,7 @@ tagg
 
 raw.Plo
 file
-
+1438
 
 
 
@@ -198,7 +198,7 @@ tagg
 
 test_file_io.Po
 file
-
+1438
 
 
 
@@ -232,7 +232,7 @@ tagg
 
 ircam.Plo
 file
-
+1438
 
 
 
@@ -266,7 +266,7 @@ tagg
 
 test_conversions.Po
 file
-
+1438
 
 
 
@@ -300,7 +300,7 @@ tagg
 
 wav.Plo
 file
-
+1438
 
 
 
@@ -334,7 +334,7 @@ tagg
 
 interleave.Plo
 file
-
+1438
 
 
 
@@ -368,7 +368,7 @@ tagg
 
 flac.Plo
 file
-
+1438
 
 
 
@@ -402,7 +402,7 @@ tagg
 
 aiff.Plo
 file
-
+1438
 
 
 
@@ -436,7 +436,7 @@ tagg
 
 au.Plo
 file
-
+1438
 
 
 
@@ -470,7 +470,7 @@ tagg
 
 file_io.Plo
 file
-
+1438
 
 
 
@@ -502,43 +502,9 @@ tagg
 
 2690
 
-test_main.Po
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-95c12a19fc9ce96ea414ca12028ba04d
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2259
-
 chanmap.Plo
 file
-
+1438
 
 
 
@@ -570,9 +536,43 @@ tagg
 
 2248
 
+test_main.Po
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+95c12a19fc9ce96ea414ca12028ba04d
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2259
+
 ulaw.Plo
 file
-
+1438
 
 
 
@@ -604,43 +604,9 @@ tagg
 
 2281
 
-ima_adpcm.Plo
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-8e915c6b26d0c7d200ffeade7680ab1e
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2380
-
 float32.Plo
 file
-
+1438
 
 
 
@@ -672,9 +638,43 @@ tagg
 
 2910
 
+ima_adpcm.Plo
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+8e915c6b26d0c7d200ffeade7680ab1e
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2380
+
 test_audio_detect.Po
 file
-
+1438
 
 
 
@@ -708,7 +708,7 @@ tagg
 
 gsm610.Plo
 file
-
+1438
 
 
 
@@ -742,7 +742,7 @@ tagg
 
 rf64.Plo
 file
-
+1438
 
 
 
@@ -774,43 +774,9 @@ tagg
 
 2457
 
-double64.Plo
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-5611f87e9e8b02b77d90d05b3724ee72
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2913
-
 test_endswap.Po
 file
-
+1438
 
 
 
@@ -842,9 +808,43 @@ tagg
 
 2658
 
+double64.Plo
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+5611f87e9e8b02b77d90d05b3724ee72
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2913
+
 htk.Plo
 file
-
+1438
 
 
 
@@ -878,7 +878,7 @@ tagg
 
 dwvw.Plo
 file
-
+1438
 
 
 
@@ -910,111 +910,9 @@ tagg
 
 2365
 
-macbinary3.Plo
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-b0c8c19e7c025ef91270ec607092ae3e
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2259
-
-avr.Plo
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-2e1a19e39dc6b74f4aee42d61addc62a
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2234
-
-sd2.Plo
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-f4fac7ca71bd9688bc59a06baa4f9b98
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2332
-
 test_float.Po
 file
-
+1438
 
 
 
@@ -1046,9 +944,111 @@ tagg
 
 2602
 
+sd2.Plo
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+f4fac7ca71bd9688bc59a06baa4f9b98
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2332
+
+avr.Plo
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+2e1a19e39dc6b74f4aee42d61addc62a
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2234
+
+macbinary3.Plo
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+b0c8c19e7c025ef91270ec607092ae3e
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2259
+
 caf.Plo
 file
-
+1438
 
 
 
@@ -1082,7 +1082,7 @@ tagg
 
 audio_detect.Plo
 file
-
+1438
 
 
 
@@ -1116,7 +1116,7 @@ tagg
 
 sds.Plo
 file
-
+1438
 
 
 
@@ -1150,7 +1150,7 @@ tagg
 
 strings.Plo
 file
-
+1438
 
 
 
@@ -1184,7 +1184,7 @@ tagg
 
 windows.Plo
 file
-
+1438
 
 
 
@@ -1218,7 +1218,7 @@ tagg
 
 pvf.Plo
 file
-
+1438
 
 
 
@@ -1252,7 +1252,7 @@ tagg
 
 wav_w64.Plo
 file
-
+1438
 
 
 
@@ -1286,7 +1286,7 @@ tagg
 
 test_ima_oki_adpcm.Po
 file
-
+1438
 
 
 
@@ -1320,7 +1320,7 @@ tagg
 
 wve.Plo
 file
-
+1438
 
 
 
@@ -1354,7 +1354,7 @@ tagg
 
 macos.Plo
 file
-
+1438
 
 
 
@@ -1388,7 +1388,7 @@ tagg
 
 broadcast.Plo
 file
-
+1438
 
 
 
@@ -1422,7 +1422,7 @@ tagg
 
 mat4.Plo
 file
-
+1438
 
 
 
@@ -1456,7 +1456,7 @@ tagg
 
 mat5.Plo
 file
-
+1438
 
 
 
@@ -1490,7 +1490,7 @@ tagg
 
 paf.Plo
 file
-
+1438
 
 
 
@@ -1524,7 +1524,7 @@ tagg
 
 chunk.Plo
 file
-
+1438
 
 
 
@@ -1558,7 +1558,7 @@ tagg
 
 rx2.Plo
 file
-
+1438
 
 
 
@@ -1592,7 +1592,7 @@ tagg
 
 mpc2k.Plo
 file
-
+1438
 
 
 
@@ -1626,7 +1626,7 @@ tagg
 
 ima_oki_adpcm.Plo
 file
-
+1438
 
 
 
@@ -1660,7 +1660,7 @@ tagg
 
 ogg.Plo
 file
-
+1438
 
 
 
@@ -1694,7 +1694,7 @@ tagg
 
 nist.Plo
 file
-
+1438
 
 
 
@@ -1728,7 +1728,7 @@ tagg
 
 command.Plo
 file
-
+1438
 
 
 
@@ -1762,7 +1762,7 @@ tagg
 
 dwd.Plo
 file
-
+1438
 
 
 
@@ -1796,7 +1796,7 @@ tagg
 
 dither.Plo
 file
-
+1438
 
 
 
@@ -1830,7 +1830,7 @@ tagg
 
 pcm.Plo
 file
-
+1438
 
 
 
@@ -1864,7 +1864,7 @@ tagg
 
 svx.Plo
 file
-
+1438
 
 
 
@@ -1898,7 +1898,7 @@ tagg
 
 vox_adpcm.Plo
 file
-
+1438
 
 
 
@@ -1932,7 +1932,7 @@ tagg
 
 w64.Plo
 file
-
+1438
 
 
 
@@ -1966,7 +1966,7 @@ tagg
 
 xi.Plo
 file
-
+1438
 
 
 
@@ -2000,7 +2000,7 @@ tagg
 
 txw.Plo
 file
-
+1438
 
 
 
@@ -2034,7 +2034,7 @@ tagg
 
 ms_adpcm.Plo
 file
-
+1438
 
 
 
@@ -2068,7 +2068,7 @@ tagg
 
 alaw.Plo
 file
-
+1438
 
 
 
@@ -2102,7 +2102,7 @@ tagg
 
 sndfile.Plo
 file
-
+1438
 
 
 

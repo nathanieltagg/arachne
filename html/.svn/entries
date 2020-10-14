@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/html
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/html
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2017-11-27T15:25:45.991978Z
-1426
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -28,7 +28,7 @@ f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
 electronics-view-portlet.inc
 file
-
+1438
 
 
 
@@ -62,7 +62,7 @@ tagg
 
 hit-map-core-portlet.inc
 file
-
+1438
 
 
 
@@ -96,7 +96,7 @@ tagg
 
 veto-view-portlet.inc
 file
-
+1438
 
 
 
@@ -130,7 +130,7 @@ tagg
 
 time-histogram-portlet.inc
 file
-
+1438
 
 
 
@@ -164,7 +164,7 @@ tagg
 
 slice-navigation-portlet.inc
 file
-
+1438
 
 
 
@@ -198,7 +198,7 @@ tagg
 
 track-hider-portlet.inc
 file
-
+1438
 
 
 
@@ -232,7 +232,7 @@ tagg
 
 data-source-portlet-reco.inc
 file
-
+1438
 
 
 
@@ -266,7 +266,7 @@ tagg
 
 minos.inc
 file
-
+1438
 
 
 
@@ -300,7 +300,7 @@ tagg
 
 mri-view-portlet.inc
 file
-
+1438
 
 
 
@@ -334,7 +334,7 @@ tagg
 
 hit-map-portlet.inc
 file
-
+1438
 
 
 
@@ -368,7 +368,7 @@ tagg
 
 energy-profile.inc
 file
-
+1438
 
 
 
@@ -402,7 +402,7 @@ tagg
 
 mc-info.inc
 file
-
+1438
 
 
 
@@ -436,7 +436,7 @@ tagg
 
 help.inc
 file
-
+1438
 
 
 
@@ -470,7 +470,7 @@ clairemont
 
 trid-portlet.inc
 file
-
+1438
 
 
 
@@ -504,14 +504,14 @@ tagg
 
 ph-histogram-portlet.inc
 file
+1438
 
 
 
-
-2014-09-05T17:46:31.775150Z
-0fd6c1f91131f71956f31d9519404a1f
-2014-06-02T15:34:28.871163Z
-1361
+2020-10-14T17:10:07.429122Z
+689ee1320f051b248f7c3e1384164857
+2020-07-20T19:45:13.264862Z
+1438
 tagg
 
 
@@ -534,11 +534,11 @@ tagg
 
 
 
-3727
+3635
 
 usertrack-portlet.inc
 file
-
+1438
 
 
 
@@ -572,7 +572,7 @@ tagg
 
 credits.inc
 file
-
+1438
 
 
 
@@ -606,7 +606,7 @@ tagg
 
 data-portlet-live.inc
 file
-
+1438
 
 
 
@@ -640,7 +640,7 @@ tagg
 
 configuration-portlet.inc
 file
-
+1438
 
 
 
@@ -674,7 +674,7 @@ tagg
 
 gate-info-portlet.inc
 file
-
+1438
 
 
 
@@ -708,7 +708,7 @@ tagg
 
 event-info-portlet.inc
 file
-
+1438
 
 
 
@@ -742,7 +742,7 @@ tagg
 
 big-xz-hitmap-portlet.inc
 file
-
+1438
 
 
 
@@ -776,7 +776,7 @@ tagg
 
 scan-entry-portlet.inc
 file
-
+1438
 
 
 
@@ -810,7 +810,7 @@ tagg
 
 mc-digraph.inc
 file
-
+1438
 
 
 
@@ -844,14 +844,14 @@ tagg
 
 libraries.inc
 file
+1438
 
 
 
-
-2014-09-05T17:46:31.776150Z
-ba8f46e563ed342b090a8b451451d13f
-2014-06-30T19:20:37.706241Z
-1370
+2020-07-20T19:14:17.717434Z
+a8d3cf36b084587f1dacdfd1213ad9de
+2020-07-20T19:42:15.811220Z
+1436
 tagg
 
 
@@ -874,11 +874,11 @@ tagg
 
 
 
-5976
+5767
 
 slice-info-simple.inc
 file
-
+1438
 
 
 
@@ -912,7 +912,7 @@ tagg
 
 data-portlet-simple.inc
 file
-
+1438
 
 
 
@@ -946,7 +946,7 @@ tagg
 
 beam-info.inc
 file
-
+1438
 
 
 
@@ -980,7 +980,7 @@ tagg
 
 data-source-portlet.inc
 file
-1428
+1438
 
 
 
@@ -1014,7 +1014,7 @@ finer
 
 expert-portlet.inc
 file
-
+1438
 
 
 
@@ -1048,7 +1048,7 @@ tagg
 
 slice-nav-portlet-simple.inc
 file
-
+1438
 
 
 
@@ -1082,7 +1082,7 @@ tagg
 
 MOTD.inc
 file
-
+1438
 
 
 
@@ -1116,7 +1116,7 @@ tagg
 
 scan-info-portlet.inc
 file
-
+1438
 
 
 
@@ -1150,7 +1150,7 @@ tagg
 
 hit-map.old
 file
-
+1438
 
 
 

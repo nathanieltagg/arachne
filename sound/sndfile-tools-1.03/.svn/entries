@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/sndfile-tools-1.03
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/sndfile-tools-1.03
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-06-25T14:03:16.193296Z
-446
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -31,7 +31,7 @@ dir
 
 configure
 file
-
+1438
 
 
 
@@ -65,7 +65,7 @@ has-props
 
 Makefile.in
 file
-
+1438
 
 
 
@@ -99,7 +99,7 @@ tagg
 
 AUTHORS
 file
-
+1438
 
 
 
@@ -131,9 +131,12 @@ tagg
 
 141
 
+src
+dir
+
 ChangeLog
 file
-
+1438
 
 
 
@@ -165,12 +168,9 @@ tagg
 
 2173
 
-src
-dir
-
 README
 file
-
+1438
 
 
 
@@ -207,7 +207,7 @@ dir
 
 configure.ac
 file
-
+1438
 
 
 
@@ -244,7 +244,7 @@ dir
 
 INSTALL
 file
-
+1438
 
 
 
@@ -278,7 +278,7 @@ tagg
 
 COPYING
 file
-
+1438
 
 
 
@@ -312,7 +312,7 @@ tagg
 
 Makefile.am
 file
-
+1438
 
 
 
@@ -349,7 +349,7 @@ dir
 
 NEWS
 file
-
+1438
 
 
 
@@ -383,7 +383,7 @@ tagg
 
 aclocal.m4
 file
-
+1438
 
 
 

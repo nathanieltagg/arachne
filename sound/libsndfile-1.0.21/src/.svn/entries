@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/libsndfile-1.0.21/src
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/libsndfile-1.0.21/src
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-09-09T18:30:53.756798Z
-553
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -28,7 +28,7 @@ f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
 Makefile.in
 file
-
+1438
 
 
 
@@ -62,7 +62,7 @@ tagg
 
 test_log_printf.c
 file
-
+1438
 
 
 
@@ -96,7 +96,7 @@ tagg
 
 chanmap.c
 file
-
+1438
 
 
 
@@ -128,43 +128,9 @@ tagg
 
 11606
 
-ima_adpcm.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-891a8089f143c597c3d742609e0079c7
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-26406
-
 config.h
 file
-
+1438
 
 
 
@@ -196,14 +162,14 @@ tagg
 
 7567
 
-chanmap.h
+ima_adpcm.c
 file
-
+1438
 
 
 
 2014-01-02T20:22:02.000000Z
-65afa3fc60881df06aca529521c7d9f2
+891a8089f143c597c3d742609e0079c7
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -228,11 +194,11 @@ tagg
 
 
 
-1175
+26406
 
 test_endswap.def
 file
-
+1438
 
 
 
@@ -264,14 +230,14 @@ tagg
 
 291
 
-gsm610.c
+chanmap.h
 file
-
+1438
 
 
 
 2014-01-02T20:22:02.000000Z
-87fdbad6164d11f746e6c589af31422e
+65afa3fc60881df06aca529521c7d9f2
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -296,11 +262,11 @@ tagg
 
 
 
-17867
+1175
 
 test_endswap.tpl
 file
-
+1438
 
 
 
@@ -332,9 +298,43 @@ tagg
 
 3582
 
+gsm610.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+87fdbad6164d11f746e6c589af31422e
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17867
+
 create_symbols_file.py
 file
-
+1438
 
 
 
@@ -368,7 +368,7 @@ has-props
 
 rf64.c
 file
-
+1438
 
 
 
@@ -402,7 +402,7 @@ tagg
 
 libsndfile-1.def
 file
-
+1438
 
 
 
@@ -436,7 +436,7 @@ tagg
 
 dwvw.c
 file
-
+1438
 
 
 
@@ -473,7 +473,7 @@ dir
 
 windows.c
 file
-
+1438
 
 
 
@@ -507,7 +507,7 @@ tagg
 
 Makefile
 file
-
+1438
 
 
 
@@ -541,7 +541,7 @@ tagg
 
 wve.c
 file
-
+1438
 
 
 
@@ -575,7 +575,7 @@ tagg
 
 macos.c
 file
-
+1438
 
 
 
@@ -609,7 +609,7 @@ tagg
 
 broadcast.c
 file
-
+1438
 
 
 
@@ -643,7 +643,7 @@ tagg
 
 test_main
 file
-
+1438
 
 
 
@@ -677,7 +677,7 @@ has-props
 
 sf_unistd.h
 file
-
+1438
 
 
 
@@ -711,7 +711,7 @@ tagg
 
 test_float.c
 file
-
+1438
 
 
 
@@ -745,7 +745,7 @@ tagg
 
 Symbols.linux
 file
-
+1438
 
 
 
@@ -779,7 +779,7 @@ tagg
 
 mat5.c
 file
-
+1438
 
 
 
@@ -813,7 +813,7 @@ tagg
 
 test_conversions.c
 file
-
+1438
 
 
 
@@ -847,7 +847,7 @@ tagg
 
 chunk.c
 file
-
+1438
 
 
 
@@ -881,7 +881,7 @@ tagg
 
 dwd.c
 file
-
+1438
 
 
 
@@ -915,7 +915,7 @@ tagg
 
 config.h.in
 file
-
+1438
 
 
 
@@ -949,7 +949,7 @@ tagg
 
 vox_adpcm.c
 file
-
+1438
 
 
 
@@ -983,7 +983,7 @@ tagg
 
 alaw.c
 file
-
+1438
 
 
 
@@ -1017,7 +1017,7 @@ tagg
 
 g72x.c
 file
-
+1438
 
 
 
@@ -1051,7 +1051,7 @@ tagg
 
 raw.c
 file
-
+1438
 
 
 
@@ -1085,7 +1085,7 @@ tagg
 
 sfendian.h
 file
-
+1438
 
 
 
@@ -1119,7 +1119,7 @@ tagg
 
 Symbols.static
 file
-
+1438
 
 
 
@@ -1151,43 +1151,9 @@ tagg
 
 474
 
-interleave.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-83124bedf1d4292769f26be291790744
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7729
-
 sndfile.h.in
 file
-
+1438
 
 
 
@@ -1219,9 +1185,43 @@ tagg
 
 21576
 
+interleave.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+83124bedf1d4292769f26be291790744
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7729
+
 sndfile.hh
 file
-
+1438
 
 
 
@@ -1255,7 +1255,7 @@ tagg
 
 sfconfig.h
 file
-
+1438
 
 
 
@@ -1287,77 +1287,9 @@ tagg
 
 2008
 
-flac.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-30491a2f7663682d9fbd3d2365fb2609
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-38960
-
-au.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-385cb60a726f28b7857b4dd72881afa0
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13493
-
 aiff.c
 file
-
+1438
 
 
 
@@ -1389,9 +1321,80 @@ tagg
 
 52179
 
+au.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+385cb60a726f28b7857b4dd72881afa0
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13493
+
+flac.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+30491a2f7663682d9fbd3d2365fb2609
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38960
+
+G72x
+dir
+
 file_io.c
 file
-
+1438
 
 
 
@@ -1423,12 +1426,9 @@ tagg
 
 35354
 
-G72x
-dir
-
 ulaw.c
 file
-
+1438
 
 
 
@@ -1462,7 +1462,7 @@ tagg
 
 float32.c
 file
-
+1438
 
 
 
@@ -1496,7 +1496,7 @@ tagg
 
 test_ima_oki_adpcm.c
 file
-
+1438
 
 
 
@@ -1530,7 +1530,7 @@ tagg
 
 double64.c
 file
-
+1438
 
 
 
@@ -1562,9 +1562,12 @@ tagg
 
 28660
 
+.libs
+dir
+
 htk.c
 file
-
+1438
 
 
 
@@ -1596,114 +1599,9 @@ tagg
 
 6828
 
-.libs
-dir
-
-sd2.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-1b50f9e315924bfd8444320b45730f53
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19083
-
-macbinary3.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-80af58c9c14768d55afa16a76afa74f6
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1177
-
-avr.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-56cf9ffebc57fa7ff69642ba23cc6874
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7323
-
 test_audio_detect.c
 file
-
+1438
 
 
 
@@ -1735,14 +1633,14 @@ tagg
 
 5144
 
-sds.c
+avr.c
 file
-
+1438
 
 
 
 2014-01-02T20:22:02.000000Z
-14c343f2c2b0cc9fb55db89a806d57ba
+56cf9ffebc57fa7ff69642ba23cc6874
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -1767,16 +1665,16 @@ tagg
 
 
 
-27897
+7323
 
-audio_detect.c
+macbinary3.c
 file
-
+1438
 
 
 
 2014-01-02T20:22:02.000000Z
-629fe08aec1467cb1a2dcc0976ac640e
+80af58c9c14768d55afa16a76afa74f6
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -1801,16 +1699,16 @@ tagg
 
 
 
-2614
+1177
 
-caf.c
+sd2.c
 file
-
+1438
 
 
 
 2014-01-02T20:22:02.000000Z
-18c1e71c279fdd099c6612504b99bc13
+1b50f9e315924bfd8444320b45730f53
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -1835,11 +1733,11 @@ tagg
 
 
 
-18951
+19083
 
 strings.c
 file
-
+1438
 
 
 
@@ -1871,9 +1769,111 @@ tagg
 
 6263
 
+caf.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+18c1e71c279fdd099c6612504b99bc13
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18951
+
+audio_detect.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+629fe08aec1467cb1a2dcc0976ac640e
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2614
+
+sds.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+14c343f2c2b0cc9fb55db89a806d57ba
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+27897
+
 pvf.c
 file
-
+1438
 
 
 
@@ -1910,7 +1910,7 @@ dir
 
 wav_w64.c
 file
-
+1438
 
 
 
@@ -1944,7 +1944,7 @@ tagg
 
 test_endswap.c
 file
-
+1438
 
 
 
@@ -1978,7 +1978,7 @@ tagg
 
 wav_w64.h
 file
-
+1438
 
 
 
@@ -2012,7 +2012,7 @@ tagg
 
 binheader_writef_check.py
 file
-
+1438
 
 
 
@@ -2046,7 +2046,7 @@ has-props
 
 mat4.c
 file
-
+1438
 
 
 
@@ -2080,7 +2080,7 @@ tagg
 
 test_file_io.c
 file
-
+1438
 
 
 
@@ -2114,7 +2114,7 @@ tagg
 
 paf.c
 file
-
+1438
 
 
 
@@ -2148,7 +2148,7 @@ tagg
 
 Symbols.os2
 file
-
+1438
 
 
 
@@ -2182,7 +2182,7 @@ tagg
 
 stamp-h1
 file
-
+1438
 
 
 
@@ -2216,7 +2216,7 @@ tagg
 
 rx2.c
 file
-
+1438
 
 
 
@@ -2250,7 +2250,7 @@ tagg
 
 ogg.c
 file
-
+1438
 
 
 
@@ -2284,7 +2284,7 @@ tagg
 
 mpc2k.c
 file
-
+1438
 
 
 
@@ -2318,7 +2318,7 @@ tagg
 
 ima_oki_adpcm.c
 file
-
+1438
 
 
 
@@ -2352,7 +2352,7 @@ tagg
 
 nist.c
 file
-
+1438
 
 
 
@@ -2386,7 +2386,7 @@ tagg
 
 command.c
 file
-
+1438
 
 
 
@@ -2420,7 +2420,7 @@ tagg
 
 pcm.c
 file
-
+1438
 
 
 
@@ -2454,7 +2454,7 @@ tagg
 
 dither.c
 file
-
+1438
 
 
 
@@ -2488,7 +2488,7 @@ tagg
 
 svx.c
 file
-
+1438
 
 
 
@@ -2522,7 +2522,7 @@ tagg
 
 w64.c
 file
-
+1438
 
 
 
@@ -2556,7 +2556,7 @@ tagg
 
 ima_oki_adpcm.h
 file
-
+1438
 
 
 
@@ -2590,7 +2590,7 @@ tagg
 
 make-static-lib-hidden-privates.sh
 file
-
+1438
 
 
 
@@ -2624,7 +2624,7 @@ has-props
 
 txw.c
 file
-
+1438
 
 
 
@@ -2658,7 +2658,7 @@ tagg
 
 ms_adpcm.c
 file
-
+1438
 
 
 
@@ -2692,7 +2692,7 @@ tagg
 
 test_main.c
 file
-
+1438
 
 
 
@@ -2726,7 +2726,7 @@ tagg
 
 sndfile.c
 file
-
+1438
 
 
 
@@ -2760,7 +2760,7 @@ tagg
 
 voc.c
 file
-
+1438
 
 
 
@@ -2794,7 +2794,7 @@ tagg
 
 Makefile.am
 file
-
+1438
 
 
 
@@ -2828,7 +2828,7 @@ tagg
 
 common.c
 file
-
+1438
 
 
 
@@ -2862,7 +2862,7 @@ tagg
 
 test_main.h
 file
-
+1438
 
 
 
@@ -2896,7 +2896,7 @@ tagg
 
 sndfile.h
 file
-
+1438
 
 
 
@@ -2930,7 +2930,7 @@ tagg
 
 Symbols.darwin
 file
-
+1438
 
 
 
@@ -2964,7 +2964,7 @@ tagg
 
 ircam.c
 file
-
+1438
 
 
 
@@ -2998,7 +2998,7 @@ tagg
 
 common.h
 file
-
+1438
 
 
 
@@ -3032,7 +3032,7 @@ tagg
 
 wav.c
 file
-
+1438
 
 
 

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    
+    <h3>About the Roundup:</h3>
+    <p>The Roundup is an attempt to give playlists of events in as easy a way as possible.</p>
+    <p>To create a new list, simply use the URL you want the list to have, in the form: http://minerva05.fnal.gov/Arachne/roundup/[your name]
+    </p>
+    <p>This will bring up an empty Roundup page. You can add events to your roundup by simply selecting 'add this event' to grab the current event in the Arachne frame, or you can enter URLs to interesting events in the text box just below the bottom of the screen. When you want to show it to others, click 'save'. If you want to delete an event, remove the line corresponding to the event from the text box, and click 'save' again.</p>
+  </body>
+</html>

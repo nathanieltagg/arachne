@@ -23,8 +23,6 @@
                Current PE range: <span id="cutinfo-ph-range"></span><br/>
              </div>
        
-       <!--#if expr="$PageStyle != simple" -->
-       <!--#if expr="$PageStyle != live" -->
        
              <div>One-push presets:</div>
              <div id="one-push-o" style="font-size: 8pt; margin: 1px;">

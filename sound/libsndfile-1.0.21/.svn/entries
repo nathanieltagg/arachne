@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/libsndfile-1.0.21
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/libsndfile-1.0.21
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-09-09T18:30:53.756798Z
-553
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -31,7 +31,7 @@ dir
 
 configure
 file
-
+1438
 
 
 
@@ -65,7 +65,7 @@ has-props
 
 Makefile.in
 file
-
+1438
 
 
 
@@ -99,7 +99,7 @@ tagg
 
 sndfile.pc
 file
-
+1438
 
 
 
@@ -133,7 +133,7 @@ tagg
 
 AUTHORS
 file
-
+1438
 
 
 
@@ -173,7 +173,7 @@ dir
 
 configure.ac
 file
-
+1438
 
 
 
@@ -210,7 +210,7 @@ dir
 
 build-test-tarball.mk.in
 file
-
+1438
 
 
 
@@ -244,7 +244,7 @@ tagg
 
 INSTALL
 file
-
+1438
 
 
 
@@ -278,7 +278,7 @@ tagg
 
 shave
 file
-
+1438
 
 
 
@@ -312,7 +312,7 @@ tagg
 
 COPYING
 file
-
+1438
 
 
 
@@ -346,7 +346,7 @@ tagg
 
 shave-libtool
 file
-
+1438
 
 
 
@@ -378,9 +378,12 @@ tagg
 
 1352
 
+man
+dir
+
 shave.in
 file
-
+1438
 
 
 
@@ -412,12 +415,9 @@ tagg
 
 1180
 
-man
-dir
-
 NEWS
 file
-
+1438
 
 
 
@@ -449,43 +449,9 @@ tagg
 
 4870
 
-shave-libtool.in
-file
-
-
-
-
-2014-01-02T20:22:09.000000Z
-2c0a63426753c3876583d6838c671be4
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1349
-
 Makefile
 file
-
+1438
 
 
 
@@ -517,17 +483,14 @@ tagg
 
 28556
 
-M4
-dir
-
-ChangeLog
+shave-libtool.in
 file
-
+1438
 
 
 
 2014-01-02T20:22:09.000000Z
-6bf5618a33c4eb275a7bc27e788e1723
+2c0a63426753c3876583d6838c671be4
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -552,11 +515,14 @@ tagg
 
 
 
-269873
+1349
+
+M4
+dir
 
 config.status
 file
-
+1438
 
 
 
@@ -588,9 +554,46 @@ has-props
 
 81201
 
+ChangeLog
+file
+1438
+
+
+
+2014-01-02T20:22:09.000000Z
+6bf5618a33c4eb275a7bc27e788e1723
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+269873
+
+programs
+dir
+
 sndfile.pc.in
 file
-
+1438
 
 
 
@@ -622,12 +625,9 @@ tagg
 
 269
 
-programs
-dir
-
 README
 file
-
+1438
 
 
 
@@ -661,7 +661,7 @@ tagg
 
 build-test-tarball.mk
 file
-
+1438
 
 
 
@@ -693,43 +693,9 @@ has-props
 
 1676
 
-libtool
-file
-
-
-
-
-2014-01-02T20:22:09.000000Z
-2a541c727a706395fe8de98840aa1363
-2010-06-25T14:03:16.193296Z
-446
-tagg
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-264237
-
 libsndfile.spec
 file
-
+1438
 
 
 
@@ -761,17 +727,18 @@ tagg
 
 1872
 
-Makefile.am
+libtool
 file
-
+1438
 
 
 
 2014-01-02T20:22:09.000000Z
-599d41daa463e67729d89db4d0f7667f
+2a541c727a706395fe8de98840aa1363
 2010-06-25T14:03:16.193296Z
 446
 tagg
+has-props
 
 
 
@@ -792,12 +759,11 @@ tagg
 
 
 
-
-728
+264237
 
 libsndfile.spec.in
 file
-
+1438
 
 
 
@@ -829,12 +795,46 @@ tagg
 
 1874
 
+Makefile.am
+file
+1438
+
+
+
+2014-01-02T20:22:09.000000Z
+599d41daa463e67729d89db4d0f7667f
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+728
+
 regtest
 dir
 
 aclocal.m4
 file
-
+1438
 
 
 

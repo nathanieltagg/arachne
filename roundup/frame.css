@@ -1,0 +1,72 @@
+.currentEvent 
+{
+  background-color: lightgray;
+  border-style:dashed;
+  
+}
+
+.entry
+{
+  display: block;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.vsplitbar {
+  width: 5px;
+  background: #aaa;
+}
+
+#sidebar
+{
+/*  display: inline-block;*/
+/*  background-color: green;*/
+  
+/*  float: left;*/
+
+  vertical-align:top;
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 5px;
+  border-right: solid black 5px;
+}
+
+div#sidebar
+{
+/*  background:#000 url(handle.png) no-repeat right center;*/
+  
+}
+#MySplitter
+{
+  width:100%;
+}
+
+#links
+{
+  background-color: white;  
+   overflow-x: scroll;
+   overflow-y: scroll;
+   border-style:solid;
+  max-height: 500px;   
+}
+
+#aiframe-div
+{
+/*  background-color: red;*/
+/*  margin-left: 160px;*/
+/*  margin-top: 10px;
+  margin-bottom: 10px;
+*/  
+  width: 800px;
+  display: inline-block;
+  min-height: 500px;
+  min-width: 400px;
+  height: 100%;
+}
+
+#save-form textarea
+{
+  width: 100%
+}

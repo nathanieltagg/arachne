@@ -1,0 +1,13 @@
+echo "select distinct det,recoVer,run,subrun,gate,slice from scan_final where flags=0 and track_prongs=1 and shower_prongs=0 and (prong1_character=1 or prong1_character=2) and gamma_conversions=0 and vee_vertices = 0 and neutrons=0 order by run,subrun,gate,slice;" | mysql -u root arachne > single-track-exiting.game
+
+echo "select distinct det,recoVer,run,subrun,gate,slice from scan_final where flags=0 and track_prongs=2 and shower_prongs=0 and (prong1_character=1 or prong1_character=2 or prong1_character=1 or prong1_character=2) and gamma_conversions=0 and vee_vertices = 0 and neutrons=0 order by run,subrun,gate,slice;" | mysql -u root arachne > two-track-with-exit.game
+
+echo "select distinct det,recoVer,run,subrun,gate,slice from scan_final where flags=0 and track_prongs=3 and shower_prongs=0 and gamma_conversions=0 and vee_vertices = 0 and neutrons=0 order by run,subrun,gate,slice;" | mysql -u root arachne > three-tracks.game
+
+echo "select distinct det,recoVer,run,subrun,gate,slice from scan_final where flags=0 and track_prongs=4 and shower_prongs=0 and gamma_conversions=0 and vee_vertices = 0 and neutrons=0 order by run,subrun,gate,slice;" | mysql -u root arachne > four-tracks.game
+
+echo "select distinct det,recoVer,run,subrun,gate,slice from scan_final where flags=0  and gamma_conversions>0 order by run,subrun,gate,slice;" | mysql -u root arachne > gamma_conversions.game
+
+echo "select distinct det,recoVer,run,subrun,gate,slice from scan_final where flags=0  and vee_vertices>0 order by run,subrun,gate,slice;" | mysql -u root arachne > vee_vertices.game
+
+echo "select distinct det,recoVer,run,subrun,gate,slice from scan_final where flags=0 and track_prongs=1 and shower_prongs=0 and prong1_character=5 and gamma_conversions=0 and vee_vertices = 0 and neutrons=0 order by run,subrun,gate,slice;" | mysql -u root arachne >  thingie-track.game

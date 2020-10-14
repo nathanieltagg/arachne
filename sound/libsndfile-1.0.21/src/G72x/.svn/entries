@@ -1,16 +1,16 @@
 10
 
 dir
-1426
-https://neutrino.otterbein.edu/svn/Arachne/Arachne/json/sound/libsndfile-1.0.21/src/G72x
-https://neutrino.otterbein.edu/svn/Arachne
+1439
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne/Arachne/json/sound/libsndfile-1.0.21/src/G72x
+svn+ssh://tagg@neutrino.otterbein.edu/data/Repositories/Arachne
 
 
 
-2010-09-09T18:30:53.756798Z
-553
+2020-10-14T17:15:29.616051Z
+1439
 tagg
-
+has-props
 
 
 
@@ -28,7 +28,7 @@ f519fff5-c35d-4d71-ac75-d58c7fa56e9f
 
 Makefile.in
 file
-
+1438
 
 
 
@@ -62,7 +62,7 @@ tagg
 
 g72x_test
 file
-
+1438
 
 
 
@@ -96,7 +96,7 @@ has-props
 
 ChangeLog
 file
-
+1438
 
 
 
@@ -130,7 +130,7 @@ tagg
 
 README
 file
-
+1438
 
 
 
@@ -164,7 +164,7 @@ tagg
 
 README.original
 file
-
+1438
 
 
 
@@ -198,7 +198,7 @@ tagg
 
 g721.c
 file
-
+1438
 
 
 
@@ -232,7 +232,7 @@ tagg
 
 g723_40.c
 file
-
+1438
 
 
 
@@ -264,9 +264,12 @@ tagg
 
 5014
 
+.libs
+dir
+
 g72x_test.c
 file
-
+1438
 
 
 
@@ -298,46 +301,9 @@ tagg
 
 5504
 
-.libs
-dir
-
-g72x.c
-file
-
-
-
-
-2014-01-02T20:22:02.000000Z
-24200b1a8bf491405d02980e7cc0354e
-2010-06-25T14:03:16.193296Z
-446
-tagg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-16993
-
 g723_24.c
 file
-
+1438
 
 
 
@@ -369,14 +335,14 @@ tagg
 
 4138
 
-g723_16.c
+g72x.c
 file
-
+1438
 
 
 
 2014-01-02T20:22:02.000000Z
-daf95cfc7f2169e10459be7215cca5ab
+24200b1a8bf491405d02980e7cc0354e
 2010-06-25T14:03:16.193296Z
 446
 tagg
@@ -401,11 +367,14 @@ tagg
 
 
 
-5497
+16993
+
+.deps
+dir
 
 Makefile.am
 file
-
+1438
 
 
 
@@ -437,12 +406,43 @@ tagg
 
 468
 
-.deps
-dir
+g723_16.c
+file
+1438
+
+
+
+2014-01-02T20:22:02.000000Z
+daf95cfc7f2169e10459be7215cca5ab
+2010-06-25T14:03:16.193296Z
+446
+tagg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5497
 
 g72x.h
 file
-
+1438
 
 
 
@@ -476,7 +476,7 @@ tagg
 
 g72x_priv.h
 file
-
+1438
 
 
 
@@ -510,7 +510,7 @@ tagg
 
 Makefile
 file
-
+1438
 
 
 

@@ -1,0 +1,8 @@
+Data files from
+/mnt/bluearc/data_processing/numib/Run_580/dst/*.root 
+
+Event display macro from CVS package AnalysisExamples/plot_macros
+though it doesn't seem up-to-date
+
+Control room launchers seem to be at 
+/afs/fnal.gov/files/code/minerva/ControlRoomTools/launchers

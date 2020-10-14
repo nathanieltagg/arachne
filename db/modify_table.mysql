@@ -1,0 +1,6 @@
+alter table tscans ADD COLUMN det char(10) default "TP" after user_name;
+alter table tscans ADD COLUMN recoVer char(10) default "v6r2p1" after det;
+alter table scanner_inbox ADD COLUMN det char(10) default "TP" after user_name;
+alter table scanner_inbox ADD COLUMN recoVer char(10) default "v6r2p1" after det;
+
+

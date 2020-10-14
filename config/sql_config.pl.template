@@ -1,0 +1,6 @@
+$db   = "database";
+$host = "host.name.edu";
+$user = "user_name";
+$pass = "Psswrd";
+
+1;
