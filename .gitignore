@@ -9,4 +9,9 @@
 ntuple_server/myroot
 ntuple_server/ntuple-server
 ntuple_server/ntuple-server.tmproj
+server/*.root
+server/backups/
+server/lastecho.dat
+server/live_event_cache/
+server/live_last_update.stamp
 
