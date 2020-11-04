@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mnvsoftVersion=v21r1p1
+mnvsoftVersion=v22r1p1
 
-buildDir=/minerva/app/home/minervapro/arachne-ntuple-server
+buildDir=/home/minervapro/gaudi-server-for-arachne
 
 setupScript=/cvmfs/minerva.opensciencegrid.org/minerva/software_releases/${mnvsoftVersion}/setup.sh
 
@@ -17,6 +17,8 @@ if [ "$USER" != "minervapro" ]; then
 fi
 
 . ${setupScript}
+
+echo "Setup script ${setupScript}"
 
 curpwd=`pwd`;
 oldpwd=$OLDPWD;
@@ -37,6 +39,13 @@ EOF
 
 cd $buildDir/Tools
 
+cvs co -d ProductionScriptsLite Tools/ProductionScriptsLite
+cd ProductionScriptsLite/cmt
+cmt config
+source setup.sh
+cmt make
+
+cd $buildDir/Tools
 # TODO: "eventLoopHack" is not a very meaningful name. Plus, it's less of a hack now
 cvs co -d eventLoopHack Personal/rodriges/eventLoopHack
 
