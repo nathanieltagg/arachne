@@ -82,7 +82,7 @@
 
 
   <div id="input-quicklink">
-    <a href="muon_decay.html">Go to the muon decay library</a>
+    <!-- <a href="muon_decay.html">Go to the muon decay library</a> -->
   </div>
 
 </div> <!-- portlet-content -->

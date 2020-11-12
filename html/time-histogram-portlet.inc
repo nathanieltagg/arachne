@@ -6,9 +6,6 @@
            <div id="timehist-options">
            <button class="ui-state-default ui-corner-all open-dialog" id='open-time-dialog'>Options</button>        
            
-          <!--#if expr="$PageStyle != simple" -->
-          <!-- <a class="soundlink" href="#">Play Sound</a> -->
-          <!--#endif -->
           <button class="ui-state-default ui-corner-all reset-button" >Reset</button>   
           
            <div class="dialog" id="time-dialog" title="Time Histogram Options">
