@@ -23,16 +23,16 @@
     </div>
     <br/>
 
-    <div style="display:none;">
+    <div >
     <button class="ui-state-default ui-corner-all do-prev-gate">Prev Gate <span class="keypress-hint">p</span></button>
     <button class="ui-state-default ui-corner-all do-next-gate">Next Gate <span class="keypress-hint">n</span></button>
     <br/>
     </div>
 
-    <!-- <button class="ui-state-default ui-corner-all do-prev-slice-and-gate">Prev Slice &amp; Gate &nbsp;&nbsp;<span class="keypress-hint">&lt;</span></button>
+<!--     <button class="ui-state-default ui-corner-all do-prev-slice-and-gate">Prev Slice &amp; Gate &nbsp;&nbsp;<span class="keypress-hint">&lt;</span></button>
     <button class="ui-state-default ui-corner-all do-next-slice-and-gate">Next Slice &amp; Gate &nbsp;&nbsp;<span class="keypress-hint">&gt;</span></button>
-    <br/> -->
-    
+    <br/>
+ -->    
     <button class="ui-state-default ui-corner-all do-slice-prev">Prev Slice <span class="keypress-hint">-</span></button>
     <button class="ui-state-default ui-corner-all do-slice-next">Next Slice <span class="keypress-hint">+</span></button>
     <div class="shift">

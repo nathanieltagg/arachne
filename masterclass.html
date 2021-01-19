@@ -1,1 +1,136 @@
-simple.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xml:lang="en">
+<head> 
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+<title>Arachne Event Viewer</title>
+
+<!-- My little icon in the link url -->
+<link rel="icon"  type="image/png" href="front_page/a" />  
+
+<!-- Activate some overrides to basic configuration. -->
+<!--#set var="PageStyle" value="masterclass" -->
+<script type="text/javascript" charset="utf-8">
+gPageName='masterclass';
+</script>
+
+<!-- Javascript libraries and code. -->
+<!--(#)include virtual="html/libraries.inc"-->
+<!--#include virtual="libraries.cgi"-->
+
+
+<!-- Main CSS sheet for basic layout, custom mods. -->
+<link rel="stylesheet" href="arachne.css" type="text/css" />
+<link rel="stylesheet" href="simple.css" type="text/css" />
+<link rel="stylesheet" href="front_page/menu.css" type="text/css" />
+
+<!-- local overrides here, mostly for development. -->
+<style type="text/css">
+</style>
+<script type="text/javascript" charset="utf-8">
+</script>
+</head>
+
+
+
+<body>
+  <div id='everything'>
+  <!--#include virtual="front_page/menu.inc" -->
+	
+  <div id="header" >
+      <img src="images/ArachneTitle.png" alt="Arachne - the MINER&nu;A Web Event Display" style="width:400px;">    </center>
+  </div> <!-- header -->
+
+  <!-- Left hand navigation bar. -->
+  <div id="nav-sidebar">
+    <table border="0" width="100%"><tr>
+    <td width="5%">Status:</td><td><div id="status">Script loading...</div></td>
+    </tr></table>
+    <!--#include virtual="html/data-portlet-simple.inc" -->
+    <!--#include virtual="html/slice-nav-portlet-simple.inc" -->
+    <!--#include virtual="html/track-hider-portlet.inc" -->
+  </div>
+  
+  
+  <!-- hidden things -->
+  <div style="display: none;">
+    
+  <!--#include virtual="html/configuration-portlet.inc" -->
+  </div>
+
+  <div id="content">
+
+  <div id='ph-hist-dock' style="float: right; width: 50%;">
+   <!--#include virtual="html/ph-histogram-portlet.inc" -->
+  </div>
+  <div id='time-hist-dock' style="margin-right: 50%; width: 50%;">
+   <!--#include virtual="html/time-histogram-portlet.inc" -->
+  </div>
+  
+  <div id='content-simplemain' style='clear:right'>
+  
+    <div id="content-sliceinfo">
+
+    
+      <!--#include virtual="html/slice-info-simple.inc" -->
+    
+    </div> <!-- content-sliceinfo -->
+
+    <!-- big-xz-hitmap-portlet.inc -->
+    <div class="portlet" id="big-hitmap-port">
+      <div class="portlet-header">Big Hitmap</div>
+      
+      <div class='portlet-content'>
+        <div id="bigXZ" class="portlet-content pad" settings="margin_left:40, margin_bottom:40 ,ylabel:'Strip', xlabel:'Module'"></div>              
+      </div> <!-- portlet-content -->
+    </div> <!-- portlet -->
+
+    <!--#include virtual="html/hit-map-core-portlet.inc" -->
+    <!--#include virtual="html/trid-portlet.inc" -->
+    
+
+  <!--#include virtual="html/expert-portlet.inc" -->
+  
+  </div> <!-- content-right -->
+  <div style="clear: both;"></div>
+  <div id="footer">
+  <!--#include virtual="html/credits.inc" --> 
+
+  </div> <!-- footer -->
+  </div> <!-- content -->
+  
+  
+  <!-- hidden stuff. -->
+  <!--#include virtual="html/help.inc" -->
+  <!--#include virtual="html/MOTD.inc" -->
+  <div id="hit-info" style="width: 150px; height: 430px" title="Hit Info"></div>
+
+  <div id="track-info" class="dialog" title="Track Information">
+    <span id="track-info-pane"></span>
+    <div class="unit-ctl">
+    		<input type="radio"  name="unit-ctl" id="unit-radio1" value="MeV" checked="yes"/><label for="unit-radio1">MeV</label>
+    		<input type="radio"  name="unit-ctl" id="unit-radio2" value="SI" />             <label for="unit-radio2">SI</label>
+    </div>
+  </div>
+  <div id="too-many-hits-confirmation" style="display:none; cursor: default"> 
+    This gate has got many raw hits (<span id='num-hits-untruncated'></span>) and will take a long time to display. Would you like to...<br/>
+    <input type="button" id="too-many-hits-continue"  value="Continue anyway" /> <br/>
+    <input type="button" id="too-many-hits-truncate"  value="Truncate at 10000 hits" /> <br/>
+    <input type="button" id="too-many-hits-stop"      value="Abort display of this event" /> <br/>
+    
+  </div>
+  <!-- <div id="track-info" class="triangle-isosceles left floating">
+    <span id="track-info-pane"></span>
+    <div class="unit-ctl">
+        <input type="radio"  name="unit-ctl" id="unit-radio1" value="MeV" checked="yes"/><label for="unit-radio1">MeV</label>
+        <input type="radio"  name="unit-ctl" id="unit-radio2" value="SI" />             <label for="unit-radio2">SI</label>
+    </div>
+  </div> -->
+
+</div> <!-- Everything --> 
+    <!--#include virtual="html/fnal-boilerplate.inc" -->
+</body>
+</html>

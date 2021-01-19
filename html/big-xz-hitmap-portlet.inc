@@ -2,7 +2,7 @@
       <div class="portlet-header">Big Hitmap</div>
       
       <div class='portlet-content'>
-      <!--#if expr="$PageStyle != simple" -->
+      <!--#if expr="$PageStyle = standard" -->
         <div id="bigXZ" class="pad" ></div> 
         <input type="checkbox" class="bighitmap-colorscale-button" name="bighitmap-colorscale-button" />
         <label for="bighitmap-colorscale-button">Draw Color Scale</label>

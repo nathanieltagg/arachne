@@ -265,10 +265,10 @@ function DoEvent()
   gWhichSliceOnNextLoad = parseInt(gWhichSliceOnNextLoad); // Just to be sure.
   // Set current slice number.
   console.log("Loading first slice as ",gWhichSliceOnNextLoad," Total slices:",gNumSlices);
-  if( (gPageName=='simple'||gPageName=='masterclass') && gRecord.ev.preferredSlice) 
-    gCurrentSlice = gRecord.ev.preferredSlice;
-  else
-    gCurrentSlice = gWhichSliceOnNextLoad; // if(gWhichSliceOnNextLoad === 'all') gCurrentSlice = -1;
+  gCurrentSlice = gWhichSliceOnNextLoad; 
+  if( gRecord.ev.preferredSlice) gCurrentSlice = gRecord.ev.preferredSlice;
+  if( gPageName == "masterclass" ) gCurrentSlice = 1;
+
   if(gCurrentSlice > gNumSlices) gCurrentSlice = gNumSlices;
   if(gNumSlices <= 0) gCurrentSlice = -1;
   console.log("Set slice to",gCurrentSlice);
