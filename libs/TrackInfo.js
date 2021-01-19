@@ -205,10 +205,8 @@ function GetTrackInfo(track)
   var module=-1;
   
   for(var i=0;i<nodes.length;i++) {
-    var clusters = $('clusters',xmlDoc);
-    var clus_idx = $('cluster_index',nodes[i]).text();
     var clus = gClusters_by_index[nodes[i].cluster_index];
-    if(!clus) console.warn(nodes[i],clus_idx,clus);
+    if(!clus) console.warn(nodes[i],'no cluster');
     module = clus.module;
     var view = clus.view;
     r.end_strip[view] = clus.strip;

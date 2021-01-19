@@ -87,7 +87,21 @@ void build_gate( JsonObject& result,
   ev.add("local_gmt_offset",tm_local.tm_gmtoff);
   ev.add("local_timezone",tm_local.tm_zone);
 
+
+
+  // Add preferred slice, if it exists.
+  bool weirdoRobFineFile = false;
+
+  TLeaf* lpreferredslice     = inTree->GetLeaf("preferredSlice");
+  if(lpreferredslice) {
+    std::cout << "Preferred Slice exists, so this is a wierdoRobFineFile" << std::endl;
+    weirdoRobFineFile = true;
+    Int_t preferredSlice = reader.getInt("preferredSlice");
+    ev.add("preferredSlice",preferredSlice);
+  }
+
   result.add("ev",ev);
+
 
   ///
   /// Clusters
@@ -149,7 +163,11 @@ void build_gate( JsonObject& result,
     JsonArray hits_idx;
     Int_t clus_size = reader.getInt(clus_prefix+"size",i);
     for(int j=0;j<clus_size;j++) {
-      Int_t hit_id = reader.getInt(clus_prefix+"hits_idx",i,j);
+      Int_t hit_id;
+      if(weirdoRobFineFile) 
+        hit_id = reader.getInt(clus_prefix+"hits_idx",60*i+j);
+      else 
+        hit_id = reader.getInt(clus_prefix+"hits_idx",i,j);
       hits_idx.add(hit_id);
       mapHitToClusters[hit_id].push_back(index);
       mapClusterToHits[index].push_back(hit_id);
@@ -190,18 +208,34 @@ void build_gate( JsonObject& result,
     //
     JsonArray nodes;
     Int_t n_nodes = reader.getInt("trk_nodes",i);
+    int weirdo_offset = (weirdoRobFineFile)?300:1;
     for(int j=0;j<n_nodes;j++) {
       JsonObject node;
       node.add("index",j);
-      node.add("x"             , reader.getJson("trk_node_X"           , i , j ));
-      node.add("y"             , reader.getJson("trk_node_Y"           , i , j ));
-      node.add("z"             , reader.getJson("trk_node_Z"           , i , j ));
-      node.add("ax"            , reader.getJson("trk_node_aX"          , i , j ));
-      node.add("ay"            , reader.getJson("trk_node_aX"          , i , j ));
-      node.add("qp"            , reader.getJson("trk_node_qOverP"      , i , j ));
-      node.add("chi2"          , reader.getJson("trk_node_chi2"        , i , j ));
+      Int_t clus_idx;
+      if(weirdoRobFineFile) {
+        node.add("x"             , reader.getJson("trk_node_X"           , 300*i+j ));
+        node.add("y"             , reader.getJson("trk_node_Y"           , 300*i+j ));
+        node.add("z"             , reader.getJson("trk_node_Z"           , 300*i+j ));
+        node.add("ax"            , reader.getJson("trk_node_aX"          , 300*i+j ));
+        node.add("ay"            , reader.getJson("trk_node_aX"          , 300*i+j ));
+        node.add("qp"            , reader.getJson("trk_node_qOverP"      , 300*i+j ));
+        node.add("chi2"          , reader.getJson("trk_node_chi2"        , 300*i+j ));
+   
+        clus_idx =  reader.getInt("trk_node_cluster_idx" , 300*i+j );
 
-      Int_t clus_idx =  reader.getInt("trk_node_cluster_idx" , i , j );
+      }else{
+        node.add("x"             , reader.getJson("trk_node_X"           , weirdo_offset*i , j ));
+        node.add("y"             , reader.getJson("trk_node_Y"           , weirdo_offset*i , j ));
+        node.add("z"             , reader.getJson("trk_node_Z"           , weirdo_offset*i , j ));
+        node.add("ax"            , reader.getJson("trk_node_aX"          , weirdo_offset*i , j ));
+        node.add("ay"            , reader.getJson("trk_node_aX"          , weirdo_offset*i , j ));
+        node.add("qp"            , reader.getJson("trk_node_qOverP"      , weirdo_offset*i , j ));
+        node.add("chi2"          , reader.getJson("trk_node_chi2"        , weirdo_offset*i , j ));
+
+        clus_idx =  reader.getInt("trk_node_cluster_idx" , weirdo_offset*i , j );
+
+      }
       node.add("cluster_index",clus_idx);
       nodes.add(node);
       
@@ -292,7 +326,12 @@ void build_gate( JsonObject& result,
     if(lclusidx) {
       Int_t n = lclusidx->GetLenStatic();
       for(int j=0;j<n;++j) {
-        Int_t clus_idx = reader.getInt(lclusidx,i,j);
+        Int_t clus_idx;
+        if(weirdoRobFineFile)
+           clus_idx = reader.getInt(lclusidx,1500*i+j);
+        else
+          clus_idx = reader.getInt(lclusidx,i,j);
+
         if(clus_idx==-1) break;
         jclus_idx.add(clus_idx);
         
