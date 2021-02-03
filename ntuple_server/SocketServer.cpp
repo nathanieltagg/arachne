@@ -10,6 +10,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
+#include <stdlib.h>
 #include "SocketServer.h"
 #include <TString.h>
 #include <iostream>
@@ -131,7 +132,7 @@ int SocketServer::Listen( double inWaitSecs,
   
   if(selection<0) {
     cout << Form("SocketServer::Listen(): select returned error: %s\n",strerror(errno));
-    return -1;
+    return -2;
   }
 
   if(selection==0) return -1;

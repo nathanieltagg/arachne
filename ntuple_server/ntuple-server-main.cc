@@ -131,12 +131,14 @@ int main(int argc, char **argv)
     unsigned char* dataRecvd;
     int   client;
     bool  newClient;
-    ss->Listen(100., // seconds timeout
+    int listen_err = 0;
+    listen_err = ss->Listen(100., // seconds timeout
               1000, // bytes max
               dataRecvd, // data recieved in message
               client,    // fd number of client.
               newClient  // true if a new client connected.
               );
+    if(listen_err<-1) break; // kill the program.
     if(newClient) {
       cout << "New client " << client << endl;
     }
