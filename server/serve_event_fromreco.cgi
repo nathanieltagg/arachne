@@ -160,6 +160,7 @@ if(! $filename || !(-r $filename || $filename =~ m/^(dcap):/)) {
 }
 
 if($filename =~ /^\/pnfs/ && $filename !~ /^\/pnfs\/minerva\/(persistent|scratch)/){
+#if(0) { #TODO: Put this back when dCache stops misbehaving.  aolivier on Feb. 16, 2021 #NOTE: Use this line when dCache misbehaves ;) Alex on 02/17/21
     # Use pnfs magic to see whether the file is in the disk
     # cache. If it's not, we'd hang waiting for the tape
     # robot. So just refuse to get it

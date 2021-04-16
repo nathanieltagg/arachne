@@ -147,6 +147,9 @@ int SocketServer::Listen( double inWaitSecs,
         int newfd = accept(mListener, (struct sockaddr *)&mClientAddress, &addrlen);
         if (newfd == -1) {
            cout << Form("SocketServer::Listen() Error accepting new connection: %s\n",strerror(errno));
+           // This is fatal error; stop trying.
+           return -2;
+
         } else {
           FD_SET(newfd, &mClients); // add to master set
           if (newfd > mFdMax) mFdMax = newfd;
@@ -271,8 +274,8 @@ int SocketServer::SendTo(int fd,
 
 int SocketServer::Close( int i )
 {
-  //close(i); // bye!
-  shutdown(i,SHUT_RDWR);
+  // shutdown(i,SHUT_RDWR);  I think using this instead of close created the 'too many files' issue
+  close(i); // bye!  
   return RemoveClient(i);// remove from master set  
 }
 
