@@ -111,14 +111,14 @@ sub start_server
       }
 
       setsid();
-      rename "ntuple-server-${file_type}.log.4", "ntuple-server-${file_type}.log.5";
-      rename "ntuple-server-${file_type}.log.3", "ntuple-server-${file_type}.log.4";
-      rename "ntuple-server-${file_type}.log.2", "ntuple-server-${file_type}.log.3";
-      rename "ntuple-server-${file_type}.log.1", "ntuple-server-${file_type}.log.2";
-      rename "ntuple-server-${file_type}.log", "ntuple-server-${file_type}.log.1";
-      unlink "ntuple-server-${file_type}.log";
+      rename "../logs/ntuple-server-${file_type}.log.4", "../logs/ntuple-server-${file_type}.log.5";
+      rename "../logs/ntuple-server-${file_type}.log.3", "../logs/ntuple-server-${file_type}.log.4";
+      rename "../logs/ntuple-server-${file_type}.log.2", "../logs/ntuple-server-${file_type}.log.3";
+      rename "../logs/ntuple-server-${file_type}.log.1", "../logs/ntuple-server-${file_type}.log.2";
+      rename "../logs/ntuple-server-${file_type}.log", "../logs/ntuple-server-${file_type}.log.1";
+      unlink "../logs/ntuple-server-${file_type}.log";
       open STDIN,  '</dev/null';
-      open STDOUT, ">ntuple-server-${file_type}.log";
+      open STDOUT, ">../logs/ntuple-server-${file_type}.log";
       open STDERR, '>&STDOUT';
   #     my $pid = getppid();
   #     # system("echo $pid > ntuple-server.pid");
@@ -130,9 +130,9 @@ sub start_server
       # script to set up the minerva software, so the ntuple server is
       # a shell script that we have to run via sh. But the DST-based
       # server is a real executable that we run directly. Oh well
-      my $cmd = "sh -c \"../ntuple_server/$exec_name $ntuple_server_port\" >> ntuple-server-${file_type}.log 2>&1";
+      my $cmd = "sh -c \"../ntuple_server/$exec_name $ntuple_server_port\" >> ../logs/ntuple-server-${file_type}.log 2>&1";
       if($file_type eq 'dst'){
-          $cmd = "../ntuple_server/$exec_name -p $ntuple_server_port >> ntuple-server-${file_type}.log 2>&1";
+          $cmd = "../ntuple_server/$exec_name -p $ntuple_server_port >> ../logs/ntuple-server-${file_type}.log 2>&1";
       }
       print  "Running: $cmd<br/>\n";
       $val = system($cmd);

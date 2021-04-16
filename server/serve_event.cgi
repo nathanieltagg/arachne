@@ -3,6 +3,7 @@ use CGI qw/:standard/;
 use POSIX qw(setsid);
 use ArachneServerTools qw(setup myerror);
 use URI::Escape;
+use Cwd;
 
 #
 # Script to get a an event from a root-file DST as an XML object.
@@ -57,7 +58,10 @@ if(defined param('filename')){
     # 
     # Requested a DST file.
     #
+    # remove asterixes and other wierdnesses.
     $pathglob=uri_unescape(param('filename'));
+    $pathglob =~ s/\Q*\E//g; 
+
 } 
 else #elsif( defined param('run') && defined param('subrun') && defined param('gate') )
 {
@@ -193,7 +197,28 @@ if((@files)==0) {
 
 print "serve_event.cgi found " . scalar(@files) . " files\n<br/>\n";
 
-$filename = $files[0];
+$filename = Cwd::realpath($files[0]);
+
+# check allowed paths.
+$restrict_to = [ getcwd(), "/uboone","/minos","/minerva", "/pnfs/minerva" ];
+
+# # Different configuration.
+# if( -r "file_browser_config.pl" ) {
+#     require "file_browser_config.pl" || die;
+
+$good=0;
+foreach $basepath (@$restrict_to)
+{
+  if( $filename=~/^$basepath/ ) {$good=1;}
+}
+
+if($good==0) {
+  ArachneServerTools::myerror("Couldn't find file for this event specification. Disallowed path.");
+}
+
+if(length($filename)==0) {
+  ArachneServerTools::myerror("Couldn't find file for this event specification.");
+}
 
 my $resp = ArachneServerTools::request($filename,$selection,$entrystart,$entryend);
 
