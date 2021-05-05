@@ -1,3 +1,5 @@
+.htpasswd
+logs/*
 .swn
 .swo
 .swp
