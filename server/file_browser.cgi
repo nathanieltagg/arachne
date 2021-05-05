@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-use CGI::Pretty qw/:standard *table *tr start_Tr start_td start_ul start_tbody end_tbody *div/;
+use CGI qw/:standard *table *tr start_Tr start_td start_ul start_tbody end_tbody *div/;
 use CGI::Carp qw/warningsToBrowser fatalsToBrowser/;
 use HTML::Entities;
 use POSIX qw(strftime);
@@ -21,7 +21,7 @@ $quick_links = [ "/minerva/data", "/minerva/data2", "/minerva/data3", "/pnfs/min
 
 # Different configuration.
 if( -r "file_browser_config.pl" ) {
-    require "file_browser_config.pl" || die;
+    require "./file_browser_config.pl" || die;
 }  
 
 sub get_filesize_str
@@ -59,7 +59,10 @@ if(defined $cook_path) {
 if(defined param('path')) {$cur_path = HTML::Entities::encode(param('path'));};
 
 my $filetypeparam="";
-if( defined param("filetype") ){ $filetypeparam="&filetype=" . HTML::Entities::encode(param("filetype")); }
+if( defined param("filetype") ){ 
+  $ft = param("filetype");
+  $filetypeparam="&filetype=" . HTML::Entities::encode($ft); 
+}
 
 $cookie = cookie(-name=>$cookie_name,
                  -value=>$cur_path,

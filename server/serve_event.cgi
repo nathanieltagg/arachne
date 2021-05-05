@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 use CGI qw/:standard/;
 use POSIX qw(setsid);
+use lib "./";
 use ArachneServerTools qw(setup myerror);
 use URI::Escape;
 use Cwd;
@@ -28,10 +29,14 @@ my $subrun=4;
 my $gate=1;
 
 
+$restrict_to = [ getcwd(), "/uboone","/minos","/minerva", "/pnfs/minerva" ];
+
+
 if( -r "server_config.pl" ) {
-    require "server_config.pl";
+    require "./server_config.pl";
 }  
 
+print('restrict to --'.$$restrict_to[0].'--');
 
 
 my $pathglob ="";
@@ -59,7 +64,8 @@ if(defined param('filename')){
     # Requested a DST file.
     #
     # remove asterixes and other wierdnesses.
-    $pathglob=uri_unescape(param('filename'));
+    $fn = param('filename');
+    $pathglob=uri_unescape($fn);
     $pathglob =~ s/\Q*\E//g; 
 
 } 
@@ -199,16 +205,13 @@ print "serve_event.cgi found " . scalar(@files) . " files\n<br/>\n";
 
 $filename = Cwd::realpath($files[0]);
 
+
+
 # check allowed paths.
-$restrict_to = [ getcwd(), "/uboone","/minos","/minerva", "/pnfs/minerva" ];
-
-# # Different configuration.
-# if( -r "file_browser_config.pl" ) {
-#     require "file_browser_config.pl" || die;
-
 $good=0;
 foreach $basepath (@$restrict_to)
 {
+  print("---".$basepath."---");
   if( $filename=~/^$basepath/ ) {$good=1;}
 }
 
