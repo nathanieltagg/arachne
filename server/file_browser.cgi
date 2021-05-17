@@ -13,7 +13,8 @@ use Cwd qw/getcwd realpath/;
 $title =  "Arachne File Browser";
 $default_path = "/minerva/data";
 $cookie_name = 'arachne_file_browser';
-$link_target = "../arachne.html";
+$link_target = "/arachne";
+$allowed_link_targets = [ "/arachne", "/simple" ];
 $restrict_to = [ getcwd(), "/uboone","/minos","/minerva", "/pnfs/minerva" ];
 $force_paths = [ "/minerva/data", "/minerva/data2", "/minerva/data3" ];
 $quick_links = [ "/minerva/data", "/minerva/data2", "/minerva/data3", "/pnfs/minerva/"];
@@ -23,6 +24,17 @@ $quick_links = [ "/minerva/data", "/minerva/data2", "/minerva/data3", "/pnfs/min
 if( -r "file_browser_config.pl" ) {
     require "./file_browser_config.pl" || die;
 }  
+
+sub is_in_arr
+{ 
+  my $elem = shift;
+  my $arr = shift;
+  foreach( @$arr ) {
+    print comment($elem . " is equal to? " . $_);
+    if( $elem eq $_ ) { return 1; }
+  }
+  return 0;
+}
 
 sub get_filesize_str
 {
@@ -64,13 +76,14 @@ if( defined param("filetype") ){
   $filetypeparam="&filetype=" . HTML::Entities::encode($ft); 
 }
 
+
+
 $cookie = cookie(-name=>$cookie_name,
                  -value=>$cur_path,
                  -expires=>'+1y',
                  -path=>'/');
 
 print header(-cookie=>$cookie);
-
 
 $scripts = [
             { -type => 'text/javascript',
@@ -96,6 +109,14 @@ print start_html(
 
 print h2({-id=>"title"},$title);
 
+if( defined param("target") ) {
+  $t = param("target");
+  print comment("target = ".$t);
+  if( is_in_arr($t,$allowed_link_targets)) {
+    $link_target = $t;
+  }
+  print comment("target = ".$link_target);
+}
 
 # Resolve path to see if it's legal. NO poking around in /etc!
 $req_path_abs = realpath($cur_path);
@@ -119,7 +140,7 @@ $bp = "";
 foreach $parent (@breakdown)
 {
   $bp .= "/" . $parent ;
-  print a({-href=>url()."?path=$bp".${filetypeparam}},$parent) . "/";
+  print a({-href=>url()."?target=$link_target&path=$bp".${filetypeparam}},$parent) . "/";
 }
 print end_div;
 print br. br;
@@ -127,7 +148,6 @@ print br. br;
 # Force open of critical paths.
 foreach $path (@$force_paths) {
   opendir(IMDTMP, $path); close(IMDTMP);
-  
 }
 
 # read directory.
@@ -177,16 +197,16 @@ if( scalar(@files) ==0 ) {
 
 foreach $f (@dirs)
 {
-  print div({-class=>"subdir"}, a({-href=>url()."?path=$cur_path/$f" . ${filetypeparam}},"$f/") );
+  print div({-class=>"subdir"}, a({-href=>url()."?target=$link_target&path=$cur_path/$f" . ${filetypeparam}},"$f/") );
 }
 
 print start_div({-id=>"footer"});
 print b({-class=>"link"},"Quick links:");
 foreach $f (@$quick_links) {
-  print a({-class=>"link",-href=>url()."?path=$f".${filetypeparam}},"$f");
+  print a({-class=>"link",-href=>url()."?target=$link_target&path=$f".${filetypeparam}},"$f");
 } 
 foreach $f (@$recent_locations) {
-  print a({-class=>"link",-href=>url()."?path=$f".${filetypeparam}},"$f");
+  print a({-class=>"link",-href=>url()."?target=$link_target&path=$f".${filetypeparam}},"$f");
 } 
 print end_div;
 
